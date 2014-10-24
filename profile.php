@@ -1,21 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-session_start();
-include("account/connect.php");
-include("language.php");
-if ( isset( $_COOKIE['language'] ) ){
-	$language = $_COOKIE['language'];
-}
-else{
-	$language = "zh-tw";
-}
 
-$lang = new Language();
-$lang->load($language);
-echo "<script>"; 
-echo "var Change_Story_Photo = '".$lang->line("change story photo")."';";
-echo "</script>"; 
-$idSelf = $_SESSION['username'];
 
 if ( isset( $_COOKIE['profileID'] ) ){
 	$profileID = $_COOKIE['profileID'];
