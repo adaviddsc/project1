@@ -1,0 +1,702 @@
+@import url("animate.css");
+/* line 2, ../sass/self-book.scss */
+body {
+  background-image: url(../images/sprinkles.png);
+}
+
+/* line 5, ../sass/self-book.scss */
+.selfbook-container {
+  width: 960px;
+  background: #fff;
+  margin: 60px auto 0;
+  position: relative;
+  box-shadow: 0 1px 2px #6C6C6C;
+}
+/* line 11, ../sass/self-book.scss */
+.selfbook-container .selfbook-header {
+  position: relative;
+}
+/* line 13, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #back-photo-edit {
+  display: block;
+  position: relative;
+  height: 300px;
+  z-index: 1;
+}
+/* line 18, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #back-photo-edit div {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+/* line 25, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #back-photo-edit div img {
+  width: 100%;
+  height: 100%;
+  height: 300px;
+  -webkit-transition: .2s linear;
+  border-radius: 5px;
+}
+/* line 33, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #back-photo-edit div:hover img {
+  opacity: .8;
+}
+/* line 39, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-photo-edit {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+/* line 44, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-photo-edit div {
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: -120px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 55, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-photo-edit div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* line 60, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-photo-edit div .change-photo {
+  width: 100%;
+  height: 100%;
+  line-height: 180px;
+  font-size: 90px;
+  background: #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: .2s linear;
+}
+/* line 73, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-photo-edit div:hover .change-photo {
+  opacity: .7;
+}
+/* line 79, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out {
+  width: 100%;
+  height: 70px;
+  background: #E3ECEC;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin-top: 3px;
+  position: relative;
+  z-index: 1;
+}
+/* line 88, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out::before {
+  content: "";
+  background-color: #a4ddc6;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50px;
+}
+/* line 102, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out div {
+  width: 120px;
+  font-size: 20px;
+  margin: 7px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #1F1F1F;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-transition: .2s linear;
+}
+/* line 114, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out div:hover {
+  background: #fff;
+  color: #134E4E;
+}
+/* line 117, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out div:hover h1 {
+  color: #134E4E;
+  font-weight: bold;
+}
+/* line 122, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out div h1 {
+  display: block;
+  margin: 0px;
+  font-size: 18px;
+}
+/* line 128, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .vertical-line {
+  display: inline-block;
+  background: #B9B9B9;
+  width: 1px;
+  height: 20px;
+  position: relative;
+  top: 22px;
+}
+/* line 136, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .float-left {
+  float: left;
+}
+/* line 139, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .float-right {
+  float: right;
+}
+/* line 142, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .new-article {
+  background: #DA2231;
+  color: #FFF;
+  border-bottom: 3px solid #B40000;
+  margin-top: 5px;
+  text-shadow: 0 1px 2px #000;
+  -webkit-transition: .2s linear;
+  font-size: 18px;
+}
+/* line 150, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .new-article:hover {
+  background: #B40000;
+  color: #fff;
+}
+/* line 153, ../sass/self-book.scss */
+.selfbook-container .selfbook-header #self-top-choice-out .new-article:hover h1 {
+  color: #fff;
+}
+/* line 161, ../sass/self-book.scss */
+.selfbook-container .add-article {
+  z-index: 1;
+  height: 0px;
+  margin: 1px 5px 5px;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+}
+/* line 168, ../sass/self-book.scss */
+.selfbook-container .add-article::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  position: absolute;
+  right: 56px;
+  top: -10px;
+  border-left: 1px dashed #A8A8A8;
+  border-top: 1px dashed #A8A8A8;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 183, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle {
+  margin: 0 auto;
+  width: 370px;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+}
+/* line 189, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle {
+  width: 165px;
+  height: 165px;
+  background: #FADECE;
+  border: 2px solid #fff;
+  float: left;
+  text-align: center;
+  text-shadow: 0 1px 2px #FFFFFF;
+  color: #2C2C2C;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: .2s linear;
+}
+/* line 201, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle i {
+  font-size: 25px;
+}
+/* line 204, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle h1 {
+  margin: 0;
+  font-size: 20px;
+}
+/* line 208, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(1) {
+  border-top-left-radius: 165px;
+}
+/* line 210, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(1) i {
+  padding-top: 65px;
+}
+/* line 214, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(2) {
+  border-top-right-radius: 165px;
+}
+/* line 216, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(2) i {
+  padding-top: 65px;
+}
+/* line 220, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(3) {
+  border-bottom-left-radius: 165px;
+}
+/* line 222, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(3) i {
+  padding-top: 45px;
+}
+/* line 226, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(4) {
+  border-bottom-right-radius: 165px;
+}
+/* line 228, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:nth-child(4) i {
+  padding-top: 45px;
+}
+/* line 232, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .quater-circle:hover {
+  background: #DA2231;
+  box-shadow: 0 1px 2px #4B4B4B;
+  color: #fff;
+  text-shadow: 0 1px 2px #4B4B4B;
+}
+/* line 239, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .circle-addicon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #DA2231;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  text-shadow: 0 1px 2px #4B4B4B;
+  color: #fff;
+}
+/* line 254, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .circle-addicon i {
+  width: 100px;
+  font-size: 25px;
+  margin-left: -4px;
+  padding-top: 23px;
+}
+/* line 260, ../sass/self-book.scss */
+.selfbook-container .add-article .add-article-circle .circle-addicon h1 {
+  margin: 0;
+  font-size: 20px;
+}
+/* line 270, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header {
+  overflow: auto;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+/* line 274, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content {
+  width: 33.33%;
+  height: 65px;
+  background: #FAE5C6;
+  border-radius: 5px;
+  float: left;
+  border: 3px solid #fff;
+  border-top: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 1px 2px 2px #FFFFFF;
+  color: #683713;
+}
+/* line 287, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content i {
+  font-size: 20px;
+  line-height: 62px;
+  letter-spacing: 5px;
+}
+/* line 292, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content h1 {
+  font-size: 20px;
+  margin: 0;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+/* line 298, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content::before {
+  content: "";
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #F0D8C8;
+}
+/* line 312, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(1)::before {
+  right: 7px;
+}
+/* line 315, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(1)::after {
+  content: "";
+  background-color: #DD8282;
+  border-radius: 5px;
+  width: 33px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 2px;
+  bottom: 0;
+  right: -20px;
+  z-index: 1;
+}
+/* line 331, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(2)::before {
+  left: 7px;
+}
+/* line 334, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(2)::after {
+  content: "";
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 7px;
+  border: 1px solid #F0D8C8;
+}
+/* line 350, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(3)::before {
+  left: 7px;
+}
+/* line 353, ../sass/self-book.scss */
+.selfbook-container .article-container .article-header .article-content:nth-child(3)::after {
+  content: "";
+  background-color: #DD8282;
+  border-radius: 5px;
+  width: 33px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 2px;
+  bottom: 0;
+  left: -20px;
+  z-index: 1;
+}
+/* line 370, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body {
+  position: relative;
+  height: 650px;
+}
+/* line 374, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .bookmark-container {
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  z-index: 2;
+}
+/* line 379, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .bookmark-container .left-bookmark {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  width: 60px;
+  height: 30px;
+  background: #FFE88B;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 8px;
+  color: #5A5A5A;
+  text-shadow: 0 1px 2px #fff;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: .2s linear;
+}
+/* line 395, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .bookmark-container .left-bookmark::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 10px 0;
+  border-color: transparent #ECBD5D transparent transparent;
+}
+/* line 406, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .bookmark-container .left-bookmark::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  right: 5px;
+}
+/* line 418, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .bookmark-container .left-bookmark:hover, .selfbook-container .article-container .article-body .bookmark-container .left-bookmark.active {
+  background: #F2A53F;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px #595959;
+}
+/* line 425, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-left {
+  float: left;
+  height: 100%;
+  width: 47px;
+  background: #F2FAF6;
+  position: relative;
+  z-index: 1;
+  border-right: 1px solid #EFEFEF;
+}
+/* line 434, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right {
+  float: right;
+  width: 100%;
+  margin-left: -47px;
+  padding-left: 47px;
+  height: 100%;
+  background: #FFF;
+  position: relative;
+}
+/* line 442, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .change-page {
+  font-size: 33px;
+  background: #000;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  opacity: .5;
+  z-index: 100;
+}
+/* line 459, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .change-page:hover {
+  opacity: .8;
+}
+/* line 463, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .fa-angle-left {
+  left: -60px;
+}
+/* line 466, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .fa-angle-right {
+  right: -45px;
+}
+/* line 469, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div {
+  width: 913px;
+  height: 100%;
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  z-index: 5;
+  visibility: hidden;
+}
+/* line 477, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div.active {
+  visibility: visible;
+  z-index: 6;
+}
+/* line 481, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 486, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .img-hidden {
+  height: 100%;
+  position: relative;
+  left: 0px;
+}
+/* line 490, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .img-hidden .article-img {
+  height: 100%;
+  width: auto;
+  float: left;
+  padding: 0 8px;
+  display: block;
+  border-right: 1px solid #C5C5C5;
+}
+/* line 497, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .img-hidden .article-img img {
+  height: 100%;
+}
+/* line 502, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background: #000;
+  right: 10px;
+  border-bottom-left-radius: 30px;
+  opacity: 0.9;
+  left: 91px;
+  top: -100%;
+  float: right;
+}
+/* line 513, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa {
+  -webkit-transition: .1s linear;
+  cursor: pointer;
+  float: left;
+  line-height: 30px;
+  color: #fff;
+  height: 30px;
+}
+/* line 520, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa:hover {
+  color: #EFB54C;
+}
+/* line 524, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa-arrows-h {
+  font-size: 25px;
+  width: 40px;
+  margin-left: 20px;
+  position: relative;
+}
+/* line 529, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa-arrows-h div {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  display: block;
+  background: #fff;
+  right: 0;
+  top: 5px;
+}
+/* line 540, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa-long-arrow-left, .selfbook-container .article-container .article-body .book-right .self-article-div .article-img-container .filp-img .fa-long-arrow-right {
+  font-size: 23px;
+  margin-left: 16px;
+}
+/* line 546, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container {
+  height: 50%;
+  overflow: hidden;
+}
+/* line 549, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 8px;
+  border-right: 1px solid #E2E2E2;
+  position: relative;
+}
+/* line 556, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa {
+  padding: 10px 0;
+  display: block;
+  font-size: 20px;
+  border-bottom: 1px dashed #E2E2E2;
+  letter-spacing: 2px;
+}
+/* line 562, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h1, .selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h2 {
+  font-size: 20px;
+  margin: 0;
+  display: inline-block;
+  padding-left: 40px;
+  width: 100%;
+  margin-left: -25px;
+}
+/* line 569, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h1 i, .selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h2 i {
+  float: left;
+  font-size: 24px;
+  position: relative;
+  top: 0;
+  height: 22px;
+  display: none;
+}
+/* line 578, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 583, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container > .fa h2 {
+  vertical-align: top;
+  max-height: 120px;
+  overflow: overlay;
+  text-overflow: ellipsis;
+}
+/* line 590, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .left-container .article-date {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+  padding-right: 20px;
+}
+/* line 599, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .right-container {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 10px 20px;
+  background: #F5FFFA;
+}
+/* line 605, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .right-container span {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 8px 0 15px;
+  letter-spacing: 8px;
+}
+/* line 612, ../sass/self-book.scss */
+.selfbook-container .article-container .article-body .book-right .self-article-div .article-content-container .right-container .article-text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 262px;
+  border: 1px dashed #E2E2E2;
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px;
+  display: block;
+  overflow: auto;
+}

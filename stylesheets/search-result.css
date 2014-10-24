@@ -1,0 +1,117 @@
+/* line 1, ../sass/search-result.scss */
+body {
+  background-image: url(../images/sprinkles.png);
+}
+
+/* line 4, ../sass/search-result.scss */
+.search-result-container {
+  position: relative;
+  width: 500px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  top: 10px;
+}
+/* line 12, ../sass/search-result.scss */
+.search-result-container .search-result-header {
+  width: 100%;
+  height: 60px;
+  background-color: #BD4019;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  font-size: 3rem;
+  padding: 8px 20px;
+}
+/* line 22, ../sass/search-result.scss */
+.search-result-container .search-result {
+  cursor: pointer;
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: #edf6f7;
+  padding: 15px;
+}
+/* line 29, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-photo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  float: left;
+}
+/* line 34, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-photo img {
+  width: 100%;
+  height: 100%;
+}
+/* line 40, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info {
+  width: 74.4%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+/* line 45, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info .search-result-info-div {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  padding-left: 8px;
+  display: inline-block;
+  color: black;
+}
+/* line 52, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info .search-result-info-div img {
+  width: 30px;
+  height: 100%;
+}
+/* line 56, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info .search-result-info-div .fa-envelope-o {
+  font-size: 2.6rem;
+  color: black;
+  padding-left: 2px;
+}
+/* line 61, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info .search-result-info-div .sex {
+  font-size: 2rem;
+  color: black;
+  padding-top: 5px;
+  padding-right: 3px;
+}
+/* line 67, ../sass/search-result.scss */
+.search-result-container .search-result .search-result-info .search-result-info-div h1 {
+  font-size: 1.8rem;
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  padding-left: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  position: relative;
+  margin: 0;
+  padding-top: 6px;
+}
+/* line 86, ../sass/search-result.scss */
+.search-result-container .search-result:hover {
+  background-color: #ffb774;
+}
+/* line 88, ../sass/search-result.scss */
+.search-result-container .search-result:hover .search-result-info-div {
+  color: white;
+}
+/* line 93, ../sass/search-result.scss */
+.search-result-container .dashed {
+  position: relative;
+  border-top: 1px dashed #d1d1d1;
+}
+/* line 97, ../sass/search-result.scss */
+.search-result-container .odd {
+  background-color: #F6F8F2;
+}
+/* line 100, ../sass/search-result.scss */
+.search-result-container .even {
+  background-color: #F7FAFA;
+}

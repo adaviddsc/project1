@@ -1,0 +1,475 @@
+/* line 4, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header {
+  padding: 15px 0 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  border: none;
+}
+/* line 10, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header button {
+  margin-top: -10px;
+  margin-right: 10px;
+}
+/* line 14, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .comments-userimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+/* line 22, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .comments-userimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* line 29, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments, #myModal-comments .modal-dialog .modal-content .modal-header .edit-comments {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 50%;
+  z-index: 1;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+/* line 38, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments::before, #myModal-comments .modal-dialog .modal-content .modal-header .edit-comments::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 12px;
+}
+/* line 47, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments .fa, #myModal-comments .modal-dialog .modal-content .modal-header .edit-comments .fa {
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+}
+/* line 52, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments h1, #myModal-comments .modal-dialog .modal-content .modal-header .edit-comments h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  letter-spacing: 1px;
+  vertical-align: text-top;
+}
+/* line 60, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments:hover, #myModal-comments .modal-dialog .modal-content .modal-header .edit-comments:hover {
+  bottom: 2px;
+  box-shadow: 0 1px 2px #333333;
+}
+/* line 65, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments {
+  left: 0px;
+  background: #F3A9A9;
+}
+/* line 68, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .readonly-comments::before {
+  left: 12px;
+}
+/* line 72, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .edit-comments {
+  right: 0px;
+  background: #F3A9A9;
+}
+/* line 75, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .edit-comments::before {
+  right: 12px;
+}
+/* line 79, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-header .active {
+  background: #C44E4E;
+}
+/* line 83, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body {
+  padding: 0px;
+  overflow: hidden;
+}
+/* line 87, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container {
+  display: none;
+}
+/* line 89, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  padding: 20px;
+}
+/* line 94, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer i {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 35px;
+  background: #1A1A1A;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+}
+/* line 109, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer i:hover {
+  opacity: .7;
+}
+/* line 112, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer i:nth-child(2) {
+  right: 20px;
+}
+/* line 116, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer .img-outline {
+  width: 456px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px dashed #CACACA;
+}
+/* line 121, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer .img-outline .comments-allImg {
+  display: none;
+  width: 450px;
+  border-radius: 5px;
+}
+/* line 126, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-imgContainer .img-outline .active {
+  display: block;
+}
+/* line 131, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info {
+  padding: 20px;
+  border-top: 1px dashed #999;
+}
+/* line 134, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 380px;
+  margin: 0 auto;
+  border-bottom: 1px solid #CECECE;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 147, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-contents {
+  width: 450px;
+  border: 3px ridge #B4F3C8;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 5px;
+  box-shadow: 0 1px 2px #8A8A8A;
+}
+/* line 154, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-contents h1 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: block;
+  max-height: 200px;
+}
+/* line 162, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-date {
+  width: 450px;
+  margin: 0px auto;
+  overflow: auto;
+}
+/* line 166, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-date i {
+  color: #C44E4E;
+  font-size: 25px;
+  float: left;
+  margin: 0 5px 0 1px;
+  text-shadow: 0 1px 2px #5C5C5C;
+  display: none;
+}
+/* line 174, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .comments-container .comments-info .comments-date div {
+  float: right;
+  font-size: 15px;
+}
+/* line 181, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container {
+  position: relative;
+  display: none;
+}
+/* line 184, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-header {
+  height: 35px;
+  width: 100%;
+  background: #C44E4E;
+  text-align: center;
+}
+/* line 189, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-header i {
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  background: #fff;
+  color: #C44E4E;
+  border-radius: 50%;
+  position: relative;
+  bottom: -4px;
+  cursor: pointer;
+  margin: 0 3px;
+  display: inline-block;
+}
+/* line 204, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-header .active {
+  box-shadow: 0 1px 2px #5F5F5F;
+  color: #8D2323;
+}
+/* line 209, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body {
+  padding: 10px;
+  text-align: center;
+}
+/* line 212, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img {
+  display: block;
+  overflow: auto;
+  width: 572px;
+  margin: 0 auto;
+}
+/* line 217, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline {
+  padding: 10px;
+  overflow: auto;
+  float: left;
+}
+/* line 221, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline:nth-child(3), #myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline:nth-child(5) {
+  border-bottom: 1px solid #E7E7E7;
+}
+/* line 224, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline:nth-child(4) {
+  border: 1px solid #E7E7E7;
+  border-top: none;
+}
+/* line 228, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline:nth-child(7) {
+  border-left: 1px solid #E7E7E7;
+  border-right: 1px solid #E7E7E7;
+}
+/* line 233, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  border: 3px dashed #BEBEBE;
+  cursor: pointer;
+  line-height: 170px;
+  font-size: 80px;
+  color: #BEBEBE;
+  position: relative;
+}
+/* line 243, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg i {
+  font-size: 18px;
+  position: absolute;
+  left: 100px;
+  background: #fff;
+  width: 22px;
+  height: 22px;
+  line-height: 25px;
+  top: 94px;
+  border-radius: 50%;
+}
+/* line 254, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  border-radius: 5px;
+}
+/* line 262, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg .progressbar {
+  font-size: 60px;
+  position: absolute;
+  left: 0px;
+  top: 53px;
+  right: 0px;
+}
+/* line 269, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg:hover {
+  color: #222;
+  border: 3px dashed #222;
+}
+/* line 272, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline .edit-comments-addimg:hover i {
+  color: #222;
+}
+/* line 278, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-img .comments-outerline #edit-comments-addimg .progressbar {
+  display: none;
+}
+/* line 284, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text {
+  display: none;
+  padding: 10px;
+}
+/* line 287, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p {
+  overflow: auto;
+  padding: 8px 0;
+  margin: 0;
+}
+/* line 291, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p:nth-child(1), #myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p:nth-child(2) {
+  border-bottom: 1px dashed #BBB;
+}
+/* line 294, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p span {
+  font-size: 18px;
+  float: left;
+  line-height: 35px;
+  letter-spacing: 6px;
+}
+/* line 300, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p input {
+  width: 85%;
+  margin: 0 auto;
+  float: right;
+}
+/* line 305, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p textarea {
+  width: 85%;
+  height: 200px;
+  resize: none;
+  margin: 0 auto;
+  float: right;
+}
+/* line 312, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .edit-container .edit-comments-body .comments-text p i {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0 2px;
+  cursor: pointer;
+  color: #C44E4E;
+}
+/* line 323, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-body .active {
+  display: block;
+}
+/* line 327, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer {
+  padding: 0px;
+}
+/* line 329, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .comments-footer {
+  display: none;
+  height: 95px;
+  background: #E9E9E9;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 5px 0;
+  text-align: left;
+  overflow: hidden;
+}
+/* line 338, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .comments-footer .comments-user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  left: 252px;
+}
+/* line 347, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .comments-footer .comments-user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* line 353, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .comments-footer .active {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 3px 5px rgba(51, 51, 102, 0.7);
+}
+/* line 359, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer {
+  display: none;
+  padding: 15px;
+  overflow: auto;
+}
+/* line 363, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer > h1 {
+  margin: 0;
+  color: #F00;
+  font-size: 18px;
+  display: inline-block;
+  float: left;
+  line-height: 35px;
+  padding-left: 25px;
+}
+/* line 372, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa {
+  width: 130px;
+  height: 35px;
+  float: right;
+  color: white;
+  font-size: 2rem;
+  padding: 7px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px #7C7878;
+  letter-spacing: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 3px;
+}
+/* line 388, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa h1 {
+  font-size: 1.9rem;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  margin-left: 5px;
+}
+/* line 395, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa:nth-child(2) {
+  background-color: #B9B9B9;
+  border-bottom: 3px solid #919191;
+}
+/* line 398, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa:nth-child(2):hover {
+  background: #919191;
+}
+/* line 402, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa:nth-child(3) {
+  background-color: #58EC70;
+  border-bottom: 3px solid #3FB13F;
+}
+/* line 405, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .edit-footer .fa:nth-child(3):hover {
+  background: #3FB13F;
+}
+/* line 411, ../sass/user-comments.scss */
+#myModal-comments .modal-dialog .modal-content .modal-footer .active {
+  display: block;
+}

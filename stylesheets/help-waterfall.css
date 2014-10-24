@@ -1,0 +1,742 @@
+@import url("external-git.css");
+/* line 2, ../sass/help-waterfall.scss */
+body {
+  background-image: url(../images/sprinkles.png);
+}
+
+/* line 8, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content {
+  top: 50px;
+}
+/* line 10, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-header {
+  padding: 10px;
+  background-color: #FF8525;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 15, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-header .fa-road {
+  color: white;
+  font-size: 2rem;
+}
+/* line 18, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-header .fa-road h1 {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0;
+}
+/* line 25, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+/* line 27, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body .googleMap {
+  width: 640px;
+  height: 480px;
+  position: relative;
+}
+/* line 32, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body .route-planning-input {
+  width: 100%;
+  background-color: #F0F6F8;
+  padding: 10px 20px 0px 10px;
+}
+/* line 38, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body .route-planning-input div img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+/* line 43, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body .route-planning-input div span {
+  float: right;
+  width: 100%;
+  padding-left: 50px;
+  margin-left: -50px;
+}
+/* line 48, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-body .route-planning-input div span input {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+/* line 58, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer {
+  border-top: none;
+  background-color: #F0F6F8;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-top: 8px;
+}
+/* line 64, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .travelmode {
+  float: right;
+  padding: 2px 10px;
+}
+/* line 67, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .travelmode i {
+  font-size: 20px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* line 74, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .travelmode i:hover {
+  opacity: .7;
+}
+/* line 78, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .travelmode .active {
+  background-color: #000;
+  color: #fff;
+}
+/* line 83, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .start-routePlanning {
+  height: 35px;
+  position: relative;
+  float: right;
+  color: white;
+  font-size: 2rem;
+  padding: 7px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px #7C7878;
+  width: 90px;
+  background-color: #FF8525;
+  border-bottom: 3px solid #976B29;
+}
+/* line 97, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .start-routePlanning h1 {
+  font-size: 1.9rem;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+/* line 103, ../sass/help-waterfall.scss */
+#myModal-map .modal-dialog .modal-content .modal-footer .start-routePlanning:hover {
+  color: #FF8525;
+  border-bottom: 3px solid white;
+  background-color: white;
+  text-shadow: 0 0px 0px #7C7878;
+}
+
+/* line 115, ../sass/help-waterfall.scss */
+.labels {
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* line 120, ../sass/help-waterfall.scss */
+.labelStart {
+  color: #6aac00;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* line 125, ../sass/help-waterfall.scss */
+.labelEnd {
+  color: #44addb;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* line 131, ../sass/help-waterfall.scss */
+.googleMap-body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  z-index: 20;
+}
+/* line 137, ../sass/help-waterfall.scss */
+.googleMap-body .googleMap-container {
+  margin: 0 auto;
+  width: 640px;
+  position: relative;
+  top: 110px;
+}
+/* line 142, ../sass/help-waterfall.scss */
+.googleMap-body .googleMap-container .googleMap {
+  width: 640px;
+  height: 480px;
+}
+/* line 147, ../sass/help-waterfall.scss */
+.googleMap-body .googleMap-outer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: .7;
+}
+
+/* line 157, ../sass/help-waterfall.scss */
+#waterfall-container {
+  position: relative;
+  width: 998px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 17px 0;
+  top: 50px;
+}
+/* line 164, ../sass/help-waterfall.scss */
+#waterfall-container .change-page {
+  padding: 8px;
+  position: fixed;
+  width: 60px;
+  height: auto;
+  margin-left: -61px;
+  top: 200px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  background-color: white;
+}
+/* line 174, ../sass/help-waterfall.scss */
+#waterfall-container .change-page span {
+  padding: 5px;
+  position: relative;
+  font-size: 3.2rem;
+  display: block;
+  cursor: pointer;
+}
+/* line 180, ../sass/help-waterfall.scss */
+#waterfall-container .change-page span .glyphicon-heart {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.8rem;
+  top: 19px;
+  left: 10px;
+}
+/* line 188, ../sass/help-waterfall.scss */
+#waterfall-container .change-page span:hover {
+  opacity: 0.7;
+}
+/* line 192, ../sass/help-waterfall.scss */
+#waterfall-container .change-page .fa-plus {
+  font-size: 4rem;
+  padding-left: 6px;
+  padding-bottom: 0px;
+}
+/* line 198, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns {
+  position: relative;
+  height: auto;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  top: 10px;
+}
+/* line 205, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns .waterfall-div {
+  width: 99%;
+  display: inline-block;
+  background: #FEFEFE;
+  border: solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  position: relative;
+  margin: 2px 2px 10px;
+  padding-bottom: 10px;
+}
+/* line 214, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns .waterfall-div img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+/* line 220, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns .waterfall-div .waterfall-div-info {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+/* line 225, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns .waterfall-div .waterfall-div-info img {
+  top: 12px;
+  left: -55px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+/* line 234, ../sass/help-waterfall.scss */
+#waterfall-container .waterfall-columns .waterfall-div .waterfall-div-info h1 {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -25px;
+}
+/* line 244, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  top: -20px;
+  display: none;
+}
+/* line 250, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns #carousel-example-generic-headgallery {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  background-color: white;
+  margin-top: 20px;
+}
+/* line 262, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns #carousel-example-generic-headgallery .carousel-inner .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+/* line 269, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns #carousel-example-generic-headgallery .carousel-control {
+  border-radius: 5px;
+}
+/* line 273, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  top: 1px;
+  box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+}
+/* line 280, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar {
+  background-image: url(../images/sprinkles.png);
+  border-bottom: 2px solid #1A191D;
+  width: 100%;
+}
+/* line 284, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar li {
+  font-size: 2.5rem;
+  width: 50%;
+}
+/* line 287, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar li a {
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #545457;
+  padding: 12px 24px;
+  color: white;
+  opacity: 1;
+  -webkit-transition: .2s linear;
+}
+/* line 297, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar li a:hover {
+  background-color: white;
+  color: #545457;
+}
+/* line 304, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar .active a {
+  height: 62px;
+  background-color: #1A191D;
+  -webkit-transition: .2s linear;
+}
+/* line 309, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content #donate-choice-bar .active a:hover {
+  background-color: white;
+  color: #1A191D;
+}
+/* line 316, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice {
+  position: relative;
+  background-image: url(../images/donateBack.png);
+  width: 99.9%;
+  padding-top: 20px;
+}
+/* line 321, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode {
+  background-image: url(../images/donateBack.png);
+  width: 465px;
+  height: 35px;
+  margin: 0 auto;
+}
+/* line 326, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode #county, #waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode #district {
+  float: left;
+  margin-right: 10px;
+}
+/* line 329, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode #county select, #waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode #district select {
+  height: 35px;
+  width: 105px;
+}
+/* line 334, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode div[data-role=zipcode] {
+  display: none;
+}
+/* line 337, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .fa {
+  height: 35px;
+  position: relative;
+  float: left;
+  color: white;
+  font-size: 2rem;
+  padding: 7px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px #7C7878;
+}
+/* line 348, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .fa h1 {
+  font-size: 1.9rem;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+/* line 354, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .fa:hover {
+  border-bottom: 3px solid white;
+  background-color: white;
+  text-shadow: 0 0px 0px #7C7878;
+}
+/* line 361, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .twzipcode-location {
+  width: 107px;
+  background-color: #58EC70;
+  margin-right: 10px;
+  border-bottom: 3px solid #3FB13F;
+}
+/* line 366, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .twzipcode-location:hover {
+  color: #58EC70;
+}
+/* line 370, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .twzipcode-road {
+  width: 117px;
+  background-color: #FF8525;
+  border-bottom: 3px solid #976B29;
+}
+/* line 374, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-choice #twzipcode .twzipcode-road:hover {
+  color: #FF8525;
+}
+/* line 380, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container {
+  background-image: url(../images/donateBack.png);
+  width: 99.9%;
+  position: relative;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  padding: 15px;
+  overflow-x: hidden;
+}
+/* line 389, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container {
+  position: fixed;
+  top: 200px;
+  z-index: 5;
+  margin-left: -15px;
+}
+/* line 394, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-circle {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 1;
+  color: white;
+  font-size: 2.5rem;
+  padding: 11px 10px;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  display: block;
+  top: 7px;
+}
+/* line 408, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-circle:hover {
+  color: black;
+  background-color: white;
+}
+/* line 413, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 {
+  left: 0px;
+  position: relative;
+  float: left;
+  display: none;
+}
+/* line 419, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 div {
+  position: relative;
+  background-color: #1EC5AA;
+  opacity: .9;
+  color: white;
+  width: 120px;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  top: 9px;
+}
+/* line 431, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 div .district1-triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 12px solid black;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: 100%;
+  margin-left: -12px;
+  top: 10px;
+}
+/* line 443, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 div:hover, #waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 .active {
+  color: black;
+  background-color: white;
+}
+/* line 444, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 div:hover .district1-triangle, #waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district1 .active .district1-triangle {
+  border-top: 10px solid white;
+  border-right: 12px solid black;
+  border-bottom: 10px solid white;
+}
+/* line 453, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district2 {
+  position: relative;
+  float: right;
+  top: -157px;
+  width: 242px;
+  display: none;
+}
+/* line 459, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district2 div {
+  position: relative;
+  background-color: black;
+  opacity: .9;
+  color: white;
+  width: 120px;
+  margin: 0 1px 1px 0;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  top: 2px;
+  float: left;
+}
+/* line 472, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .address-circle-container .address-district2 div:hover {
+  color: black;
+  background-color: white;
+}
+/* line 479, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div {
+  width: 99%;
+  display: inline-block;
+  background: #FEFEFE;
+  border: solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  position: relative;
+  margin: 2px 2px 10px;
+}
+/* line 487, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div:hover {
+  opacity: .9;
+}
+/* line 489, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div:hover .addLocation {
+  display: block;
+}
+/* line 494, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .addLocation {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  color: #FF5656;
+  z-index: 1;
+  font-size: 2.9rem;
+  padding: 6px 6px;
+  left: 100%;
+  margin-left: -45px;
+  top: 5px;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  display: none;
+}
+/* line 510, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .addLocation .fa-plus {
+  font-size: 1.0rem;
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  top: 11px;
+}
+/* line 517, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .addLocation:hover {
+  color: #812E2E;
+}
+/* line 521, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .glyphicon-ok {
+  display: block;
+  padding: 6px 5px;
+}
+/* line 526, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div img {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+/* line 531, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-div-info {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+/* line 536, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-div-info img {
+  top: 12px;
+  left: -55px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+/* line 545, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-div-info div {
+  float: right;
+  position: relative;
+  left: 40px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #812E2E;
+  margin-top: 19px;
+  margin-left: -29px;
+}
+/* line 555, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-div-info h1 {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 171px;
+  top: -28px;
+}
+/* line 567, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container {
+  width: 96%;
+  position: relative;
+  background-color: #ecf5f3;
+  top: 17px;
+  display: none;
+  margin: 6px;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  border: 2px solid;
+}
+/* line 577, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-triangle {
+  border-left: 15px solid white;
+  border-bottom: 15px solid #262E25;
+  border-right: 15px solid white;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  right: 14px;
+  top: -17px;
+}
+/* line 587, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-top {
+  width: 100%;
+  background-color: #262E25;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 2.2rem;
+}
+/* line 596, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text {
+  width: 100%;
+  position: relative;
+}
+/* line 599, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-text-container {
+  font-size: 2rem;
+  width: 100%;
+  padding: 13px;
+}
+/* line 603, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-text-container span {
+  position: relative;
+  float: left;
+  padding-top: 3px;
+}
+/* line 608, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-text-container div {
+  position: relative;
+  padding-left: 30px;
+}
+/* line 612, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-text-container .fa-map-marker {
+  padding-left: 3px;
+}
+/* line 615, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-text-container .glyphicon-phone-alt {
+  font-size: 1.9rem;
+}
+/* line 620, ../sass/help-waterfall.scss */
+#waterfall-container .donate-columns .donate-columns-content .donate-columns-content-container .donate-columns-content-div .donate-columns-content-info-container .info-container-text .info-container-time {
+  text-align: right;
+  padding-bottom: 11px;
+  padding-right: 14px;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1105px) {
+  /* line 637, ../sass/help-waterfall.scss */
+  #waterfall-container {
+    width: 666px;
+  }
+  /* line 639, ../sass/help-waterfall.scss */
+  #waterfall-container .waterfall-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 775px) {
+  /* line 648, ../sass/help-waterfall.scss */
+  #waterfall-container {
+    width: 555px;
+  }
+}
+@media (max-width: 665px) {
+  /* line 653, ../sass/help-waterfall.scss */
+  #waterfall-container {
+    width: 500px;
+  }
+}
+@media (max-width: 615px) {
+  /* line 658, ../sass/help-waterfall.scss */
+  #waterfall-container {
+    width: 400px;
+  }
+  /* line 660, ../sass/help-waterfall.scss */
+  #waterfall-container .waterfall-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}

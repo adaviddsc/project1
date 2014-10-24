@@ -1,0 +1,96 @@
+@import url("external-git.css");
+/* line 4, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content {
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 5px;
+}
+/* line 9, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-header .info-h1 {
+  position: relative;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+/* line 16, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body {
+  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  background-color: #DFE8EC;
+}
+/* line 24, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form {
+  width: auto;
+  padding: 0 20px;
+}
+/* line 27, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-up {
+  position: relative;
+  width: 100%;
+}
+/* line 30, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-up p {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  left: 0px;
+}
+/* line 36, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-up .dialog-input {
+  border-style: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2.35rem;
+  height: 35px;
+  width: 425px;
+  margin-bottom: 10px;
+  float: right;
+  border: 1px solid #DDDDDD;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* line 49, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+}
+/* line 55, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down .sex {
+  font-size: 2.5rem;
+}
+/* line 58, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down #male {
+  color: #4169E1;
+}
+/* line 59, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down #female {
+  color: #FF1493;
+}
+/* line 60, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down .dialog-button {
+  text-align: center;
+  position: relative;
+  width: 118px;
+  height: 38px;
+}
+/* line 66, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down #alert-info {
+  color: red;
+}
+/* line 68, ../sass/self-info-dialog.scss */
+#myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-down #alert-info h2 {
+  margin-top: 10px;
+}
+
+@media (max-width: 540px) {
+  /* line 85, ../sass/self-info-dialog.scss */
+  #myModal-info .modal-dialog .modal-content .modal-body form #sex-form-container-up .dialog-input {
+    width: 100%;
+  }
+}

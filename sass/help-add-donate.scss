@@ -1,0 +1,176 @@
+@import url("external-git.css"); 
+#myModal-donate{
+	.modal-dialog{
+		.modal-content{
+			margin-left: -50px;
+			margin-right: -50px;
+			.modal-header{
+				.donate-header{
+					text-align: center;
+					h1{
+						margin: 0;
+						line-height: 60px;
+						font-size: 4rem;
+					}
+				}
+			}
+			.modal-body{
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				background-color: #f7f7f7;
+				height: auto;
+				.item-info{
+					position: relative;
+					width: 100%;
+					border: 2px solid #2E5E46;
+					border-radius: 8px;
+					.item-info-header{
+						h1{
+							font-size: 2rem;
+							margin: 0px;
+							padding: 12px;
+							background-color: #2E5E46;
+							color: white;
+
+						}
+					}
+					form{
+						width: 100%;
+						padding: 10px;
+						overflow: auto;
+						.item-info-images{
+							width: 100%;
+							margin-bottom: 10px;				
+							text-align: center;
+							div{
+								font-size: 20rem;
+								width: 200px;
+								height: 200px;
+								cursor: pointer;
+							}
+							div:hover,img:hover{
+								opacity: .5;
+							}
+							img{
+								cursor: pointer;
+							}
+						}
+						.item-info-tags{
+							position: absolute;
+							width: 30px;
+							float: left;
+							.fa-tag{
+								padding-top: 4px;
+								font-size: 2.5rem;
+							}
+							.glyphicon-gift{
+								padding-top: 12px;
+								font-size: 2.3rem;
+							}
+							.fa-map-marker{
+								padding-top: 11px;
+								font-size: 2.8rem;
+								padding-left: 3px;
+							}
+							.glyphicon-phone-alt{
+								padding-top: 13px;
+								font-size: 2.1rem;
+							}
+							.fa-pencil-square-o{
+								padding-top: 75px;
+								font-size: 2.4rem;
+							}
+						}
+						.item-info-items{
+							position: relative;
+							padding-left: 30px;
+							width: 100%;
+							float: right;
+							.item-info-items-div1{
+								width: 100%;
+								padding-right: 210px;
+
+								input[type=text]{
+									width: 100%;
+									float: left;
+									height: 30px;
+								}
+							}
+							.item-info-items-div2{
+								width: 100%;
+								input[type=text]{
+									width: 49.15%;	
+									height: 30px;
+								}
+								.phone1{
+									float: left;
+								}
+								.phone2{
+									float: right;
+								}
+							}
+							input[type=date]{
+								width: 200px;
+								float: right;
+								height: 30px;
+							}
+							input{
+								width: 100%;
+								height: 30px;
+								margin-bottom: 10px;
+							}
+							textarea{
+								height: 150px;
+								resize: none;
+							}
+							input[type=submit]{
+								margin-top: 20px;
+								width: 110px;
+								float: right;
+								height: 40px;
+								margin-bottom: 0px;
+							}
+							
+							#item-info-twzipcode{
+								width: 180px;
+								height: 30px;
+								float: left;
+								position: relative;
+								z-index: 1;
+								#item-info-county,#item-info-district{
+									float: left;
+									margin-right: 5px;
+									select{
+										height: 30px;
+										width: 85px;
+										padding: 0px;
+									}					
+								}
+								#item-info-zipcode{
+									display: none;
+								}
+							}
+							.item-info-twzipcode-address{
+								width: 100%;
+								float: left;
+								margin-left: -180px;
+								padding-left: 180px;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px){	
+	#myModal-donate{
+		.modal-dialog{
+			.modal-content{
+				margin: 0 auto;
+			}
+		}
+	}
+}
+

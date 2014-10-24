@@ -1,0 +1,194 @@
+@import url("external-git.css");
+/* line 4, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+/* line 8, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-header .donate-header {
+  text-align: center;
+}
+/* line 10, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-header .donate-header h1 {
+  margin: 0;
+  line-height: 60px;
+  font-size: 4rem;
+}
+/* line 17, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #f7f7f7;
+  height: auto;
+}
+/* line 22, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info {
+  position: relative;
+  width: 100%;
+  border: 2px solid #2E5E46;
+  border-radius: 8px;
+}
+/* line 28, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info .item-info-header h1 {
+  font-size: 2rem;
+  margin: 0px;
+  padding: 12px;
+  background-color: #2E5E46;
+  color: white;
+}
+/* line 37, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form {
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+/* line 41, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-images {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 45, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-images div {
+  font-size: 20rem;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+/* line 51, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-images div:hover, #myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-images img:hover {
+  opacity: .5;
+}
+/* line 54, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-images img {
+  cursor: pointer;
+}
+/* line 58, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags {
+  position: absolute;
+  width: 30px;
+  float: left;
+}
+/* line 62, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags .fa-tag {
+  padding-top: 4px;
+  font-size: 2.5rem;
+}
+/* line 66, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags .glyphicon-gift {
+  padding-top: 12px;
+  font-size: 2.3rem;
+}
+/* line 70, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags .fa-map-marker {
+  padding-top: 11px;
+  font-size: 2.8rem;
+  padding-left: 3px;
+}
+/* line 75, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags .glyphicon-phone-alt {
+  padding-top: 13px;
+  font-size: 2.1rem;
+}
+/* line 79, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-tags .fa-pencil-square-o {
+  padding-top: 75px;
+  font-size: 2.4rem;
+}
+/* line 84, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items {
+  position: relative;
+  padding-left: 30px;
+  width: 100%;
+  float: right;
+}
+/* line 89, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div1 {
+  width: 100%;
+  padding-right: 210px;
+}
+/* line 93, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div1 input[type=text] {
+  width: 100%;
+  float: left;
+  height: 30px;
+}
+/* line 99, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div2 {
+  width: 100%;
+}
+/* line 101, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div2 input[type=text] {
+  width: 49.15%;
+  height: 30px;
+}
+/* line 105, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div2 .phone1 {
+  float: left;
+}
+/* line 108, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-items-div2 .phone2 {
+  float: right;
+}
+/* line 112, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items input[type=date] {
+  width: 200px;
+  float: right;
+  height: 30px;
+}
+/* line 117, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+/* line 122, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items textarea {
+  height: 150px;
+  resize: none;
+}
+/* line 126, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items input[type=submit] {
+  margin-top: 20px;
+  width: 110px;
+  float: right;
+  height: 40px;
+  margin-bottom: 0px;
+}
+/* line 134, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode {
+  width: 180px;
+  height: 30px;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+/* line 140, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode #item-info-county, #myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode #item-info-district {
+  float: left;
+  margin-right: 5px;
+}
+/* line 143, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode #item-info-county select, #myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode #item-info-district select {
+  height: 30px;
+  width: 85px;
+  padding: 0px;
+}
+/* line 149, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items #item-info-twzipcode #item-info-zipcode {
+  display: none;
+}
+/* line 153, ../sass/help-add-donate.scss */
+#myModal-donate .modal-dialog .modal-content .modal-body .item-info form .item-info-items .item-info-twzipcode-address {
+  width: 100%;
+  float: left;
+  margin-left: -180px;
+  padding-left: 180px;
+}
+
+@media (max-width: 767px) {
+  /* line 170, ../sass/help-add-donate.scss */
+  #myModal-donate .modal-dialog .modal-content {
+    margin: 0 auto;
+  }
+}

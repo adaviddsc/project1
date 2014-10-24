@@ -1,0 +1,30 @@
+@import url("external-git.css");
+/* line 4, ../sass/index-language-dialog.scss */
+#myModal-language .modal-dialog .modal-content {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+/* line 9, ../sass/index-language-dialog.scss */
+#myModal-language .modal-dialog .modal-content .modal-header .language-choice {
+  text-align: center;
+}
+/* line 13, ../sass/index-language-dialog.scss */
+#myModal-language .modal-dialog .modal-content .modal-body {
+  overflow: hidden;
+  background-color: #DFE8EC;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 18, ../sass/index-language-dialog.scss */
+#myModal-language .modal-dialog .modal-content .modal-body .language-choice-body {
+  text-align: center;
+  width: 181px;
+}
+
+@media (max-width: 320px) {
+  /* line 31, ../sass/index-language-dialog.scss */
+  #myModal-language .modal-dialog .modal-content .modal-body .language-choice-body {
+    width: 100%;
+  }
+}

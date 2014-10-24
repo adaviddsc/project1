@@ -1,0 +1,38 @@
+@import url("external-git.css"); 
+#myModal-language{
+	.modal-dialog{
+		.modal-content{
+			max-width: 400px;
+			margin: 0 auto;
+			border-radius: 5px;
+			.modal-header{
+				.language-choice{
+					text-align: center;
+				}
+			}
+			.modal-body{
+				overflow: hidden;
+				background-color: #DFE8EC;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				.language-choice-body{
+					text-align: center;
+					width: 181px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+ 	#myModal-language{
+		.modal-dialog{
+			.modal-content{
+				.modal-body{
+					.language-choice-body{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

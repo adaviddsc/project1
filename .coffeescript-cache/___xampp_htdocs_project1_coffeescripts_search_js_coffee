@@ -1,0 +1,1 @@
+{"mtime":1406565238,"js":"(function() {\n  $(function() {\n    $.get(\"php/top-frame-home.php\", function(data) {\n      $(\"body\").append(data);\n      $.get(\"php/search-result.php\", function(data) {\n        $(\"body\").append(data);\n      });\n    });\n  });\n\n}).call(this);\n"}

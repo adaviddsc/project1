@@ -1,0 +1,35 @@
+/* line 3, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo {
+  height: auto;
+  margin: 0 -100px;
+}
+/* line 7, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo .modal-header div {
+  text-align: center;
+  font-size: 4rem;
+}
+/* line 12, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo .modal-body {
+  background-color: #DFE8EC;
+}
+/* line 14, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo .modal-body #carousel-example-generic-donate {
+  position: relative;
+}
+/* line 17, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo .modal-body #carousel-example-generic-donate #carousel-inner-donateinfo div {
+  background-color: #181f1c;
+}
+/* line 21, ../sass/donateinfo-dialog.scss */
+#myModal-donateinfo .modal-dialog #modal-content-donateinfo .modal-body #carousel-example-generic-donate #carousel-inner-donateinfo .item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 805px) {
+  /* line 39, ../sass/donateinfo-dialog.scss */
+  #myModal-donateinfo .modal-dialog #modal-content-donateinfo {
+    margin: 0 auto;
+  }
+}

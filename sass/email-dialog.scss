@@ -1,0 +1,490 @@
+
+#myModal-email{
+	.modal-dialog{
+		.modal-content{
+			margin: 0 auto;
+			border-radius: 8px;
+			border-top-right-radius: 13px;
+			width: 500px;
+			.modal-header{
+				padding: 0px;
+				.email-header{
+					width: 100%;
+					position: relative;
+					background-color: #505b54;
+					padding: 15px;
+					padding-left: 23px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 8px;
+					z-index: 2;
+					.fa-envelope{
+						color: white;
+						margin: 0px;
+						font-size: 3.8rem;
+					}
+					.fa-times{
+						position: relative;
+						z-index: 1;
+						color: #FFFFFF;
+						font-size: 2rem;
+						float: right;
+						top: -5px;
+						cursor: pointer;
+					}
+					.fa-times:hover{
+						color: #D56868;
+					}
+				}
+				
+				
+			}
+			.modal-body{
+				padding: 0px;
+				.email-container{
+					border-radius: 8px;
+					width: 100%;
+					position: relative;
+					background-color: rgb(240, 241, 247);
+					.email-container-header{
+						width: 100%;
+						height: 65px;
+						position: relative;
+						z-index: 2;
+						background-color: rgb(240, 241, 247);
+						top: -1px;
+						.header-circle-out{
+							width: 60px;
+							height: 60px;
+							background-color: #CC735D;
+							position: relative;
+							float: left;
+							border-radius: 50%;
+							margin: 4px;
+							cursor: pointer;
+							.header-circle-in{
+								background-color: #a21e1e;
+								-webkit-transition: background 0.3s linear;
+						        -moz-transition: background 0.3s linear;
+						        -ms-transition: background 0.3s linear;
+						        -o-transition: background 0.3s linear;
+						        transition: background 0.3s linear;
+								position: relative;
+								border: 2px solid white;
+								border-radius: 50%;
+								width: 60px;
+								height: 60px;
+								width: 50px;
+								height: 50px;
+								left: 50%;
+								top: 50%;
+								margin-left: -25px;
+								margin-top: -25px;
+								.fa{
+									position: relative;							
+									color: white;
+							        -webkit-transition: color 0.3s linear;
+							        -moz-transition: color 0.3s linear;
+							        -ms-transition: color 0.3s linear;
+							        -o-transition: color 0.3s linear;
+							        transition: color 0.3s linear;									
+								}
+								.fa-comments-o{
+									font-size: 3.2rem;
+									left: 7px;
+									top: 7px;
+								}
+								.fa-user{
+									font-size: 3.2rem;
+									left: 11px;
+									top: 7px;
+								}
+								.fa-plus-circle{
+									left: -6px;
+									top: 10px;
+									color: #a21e1e;
+									font-size: 1.7rem;
+								}
+								.fa-bell-o{
+									font-size: 2.8rem;
+									left: 10px;
+									top: 9px;
+								}
+							}	
+							&:hover{
+								-webkit-transform: rotate(360deg);
+								-webkit-transition-property:all;
+								-webkit-transition-duration:0.3s;
+								-webkit-transition-delay:0s;
+								-webkit-transition-timing-function:ease-out;
+								.header-circle-in{
+									background-color: white;
+									.fa{	
+										color:#a21e1e; 											
+									}
+									.fa-plus-circle{
+										color: white;
+									}
+								}
+							}
+						}													
+					}
+					.email-container-chat{
+						display: none;
+						width: 100%;
+						position: relative;
+						border-bottom-left-radius: 8px;
+						border-bottom-right-radius: 5px;
+						.email-container-chat-container-people{
+							top: 0px;
+							width: 100%;
+							position: relative;
+							padding: 20px;
+							z-index: 1;
+							display: inline-block;
+							.email-container-chat-photo{
+								height: 70px;
+								width: 70px;
+								position: relative;
+								border-radius: 50%;
+								float: left;
+								z-index: 1;														
+								-webkit-transition: -webkit-transform 0.4s linear;
+								opacity: .7;
+								img{
+									width: 90%;
+									height: 90%;
+									border-radius: 50%;
+									cursor: pointer;
+									-webkit-animation:fadeInLeft 0.7s .2s ease both;
+									-moz-animation:fadeInLeft 0.7s .2s ease both;
+								}
+								.fa{
+									width: 30px;
+									height: 30px;
+									position: absolute;
+									background-color: black;
+									border-radius: 50%;
+									color: white;
+									display: none;
+									top: 18px;
+									cursor: pointer;
+								}
+								.fa-users{							
+									left: -32px;
+									padding-top: 8px;
+									padding-left: 6px;
+									&:hover{
+										color: black;
+										background-color: white;
+									}
+								}
+								.fa-comment-o{								
+									left: 65px;
+									font-size: 1.8rem;
+									padding-left: 6px;
+									padding-top: 5px;
+									&:hover{
+										color: black;
+										background-color: white;
+									}
+								}
+							}
+						}
+						.fa-chevron-left{
+							position: fixed;
+							width: 45px;
+							height: 45px;
+							border-radius: 50%;
+							background-color: black;
+							z-index: 1;
+							color: white;
+							padding: 9px;
+							font-size: 3rem;
+							opacity: .7;
+							top: 250px;
+							left: 110px;
+							cursor: pointer;
+							display: none;
+							z-index: 2;
+							&:hover{
+								opacity: 1;
+							}
+						}
+						.email-container-chat-container-chatting{
+							top: 0px;
+							width: 100%;
+							height: 400px;
+							position: relative;
+							padding: 15px 5px 7px;
+							z-index: 1;
+							background-color: white;
+							left: 100%;
+							display: none;
+							overflow-y: auto;
+							overflow-x: hidden;
+							
+							.chatting-district-left{
+								width: 100%;
+								position: relative;
+								min-height: 80px;
+								.chatting-photo{
+									width: 60px;
+									height: 60px;
+									float: left;
+									img{
+										width: 100%;
+										height: 100%;
+										border-radius: 50%;
+									}
+								}
+								.chatting-info{
+									background-color: rgb(224, 228, 230);
+									max-width: 63%;
+									border-radius: 5px;
+									display: inline-block;
+									position: relative;
+									left: 13px;
+									padding: 10px;
+									top: 8px;
+									margin-bottom: 20px;
+									box-shadow: 1px 1px 2px #575656;
+
+									.triangle{
+										width: 0;
+										height: 0;
+										border-top: 10px solid transparent;
+										border-right: 12px solid rgb(224, 228, 230);
+										border-bottom: 10px solid transparent;
+										position: absolute;
+										top: 12px;
+										left: -12px;
+									}
+
+								}
+							}
+
+							.chatting-district-right{
+								width: 100%;
+								position: relative;
+								min-height: 80px;
+								display: inline-block;
+								.chatting-photo{
+									width: 60px;
+									height: 60px;
+									float: right;
+									img{
+										width: 100%;
+										height: 100%;
+										border-radius: 50%;
+									}
+								}
+								.chatting-info{
+									background-color: #0CB650;
+									color: white;
+									max-width: 63%;
+									border-radius: 5px;
+									display: inline-block;
+									position: relative;
+									left: -13px;
+									padding: 10px;
+									top: 8px;
+									margin-bottom: 20px;
+									box-shadow: 1px 1px 2px #575656;
+									float: right;
+									.triangle{
+										width: 0;
+										height: 0;
+										border-top: 10px solid transparent;
+										border-left: 12px solid #0CB650;
+										border-bottom: 10px solid transparent;
+										position: absolute;
+										top: 12px;
+										left: 100%;
+
+									}
+
+								}
+							}
+
+						}
+						.chatting-district-input{
+							display: none;
+							position: relative;
+							width: 100%;
+							height: 60px;
+							border-top: 1px solid #C5BFBF;
+							background-color: #E2E3EE;
+							textarea{
+								width: 71.5%;
+								position: relative;
+								top: 15px;
+								float: right;
+								height: 30px;
+								resize: none;
+								overflow: hidden;
+
+							}
+							input[type=submit]{
+								position: relative;
+								top: 10px;
+								float: right;
+								height: 35px;
+								width: 85px;
+								margin: 0 8px;
+							}
+						}
+					}
+					.email-container-user{
+						display: none;
+						width: 100%;
+						position: relative;
+						.email-container-user-container{
+							top: 0px;
+							width: 100%;
+							height: 120px;
+							position: relative;
+							padding: 10px;
+							border-top: 1px dashed #8A7F7F;
+							z-index: 1;
+							.email-container-user-photo{
+								height: 100%;
+								width: 100px;
+								position: relative;
+								float: left;
+								img{
+									width: 100px;
+									height: 100px;
+									border-radius: 50%;
+									cursor: pointer;
+									-webkit-animation:fadeInLeft 0.7s .2s ease both;
+									-moz-animation:fadeInLeft 0.7s .2s ease both;
+								}
+								&:hover{
+									-webkit-animation:tada 1s .2s ease both;
+									-moz-animation:tada 1s .2s ease both;
+								}
+							}
+							.email-container-user-info{
+								width: 69.5%;
+								height: 100%;
+								float: right;
+								h1{
+									padding-top: 10px;
+									width: 100%;
+									text-align: center;
+									margin: 0px;
+									font-size: 2rem;
+									overflow:hidden;
+								    text-overflow:ellipsis;
+								    white-space: nowrap;
+								}
+								.user-info-button{
+									width: 100%;
+									height: 60px;
+									position: relative;
+									padding: 10px 52px;
+									div{
+										width: 50px;
+										height: 50px;
+										position: relative;
+										float: left;
+										border-radius: 50%;
+										margin: 0 5px;
+									}
+									.user-info-left{						
+										background-color: #32EE49;
+										cursor: pointer;
+										-webkit-transition: background 0.3s linear;
+								        -moz-transition: background 0.3s linear;
+								        -ms-transition: background 0.3s linear;
+								        -o-transition: background 0.3s linear;
+								        transition: background 0.3s linear;		
+										.fa-user{
+											-webkit-transition: color 0.3s linear;
+									        -moz-transition: color 0.3s linear;
+									        -ms-transition: color 0.3s linear;
+									        -o-transition: color 0.3s linear;
+									        transition: color 0.3s linear;	
+											position: absolute;
+											font-size: 3.4rem;
+											color: white;
+											left: 12px;
+											top: 9px;										
+										}
+										.fa-plus-circle{
+											-webkit-transition: color 0.3s linear;
+									        -moz-transition: color 0.3s linear;
+									        -ms-transition: color 0.3s linear;
+									        -o-transition: color 0.3s linear;
+									        transition: color 0.3s linear;	
+											position: absolute;
+											font-size: 1.8rem;
+											color: #32EE49;
+											left: 27px;
+											top: 26px;
+										}
+										&:hover{
+											-webkit-animation:tada 1s .2s ease both;
+											-moz-animation:tada 1s .2s ease both;
+											background: white;
+											.fa-user{
+												color: #32EE49;									
+											}
+											.fa-plus-circle{
+												color: white;
+											}	
+										}										
+									}
+									.user-info-right{
+										background-color: #3278E0;
+										cursor: pointer;
+										-webkit-transition: background 0.3s linear;
+								        -moz-transition: background 0.3s linear;
+								        -ms-transition: background 0.3s linear;
+								        -o-transition: background 0.3s linear;
+								        transition: background 0.3s linear;	
+										i{
+											-webkit-transition: color 0.3s linear;
+									        -moz-transition: color 0.3s linear;
+									        -ms-transition: color 0.3s linear;
+									        -o-transition: color 0.3s linear;
+									        transition: color 0.3s linear;
+											position: absolute;
+											font-size: 4rem;
+											color: white;
+											left: 8px;
+											top: 6px;
+										}
+										&:hover{
+											-webkit-animation:tada 1s .2s ease both;
+											-moz-animation:tada 1s .2s ease both;
+											background-color: white;
+											i{
+												color: #3278E0
+											}
+										}
+									}								
+								}
+								
+							}
+						}
+					}
+					.email-container-other{
+						display: none;
+						width: 100%;
+						position: relative;
+					}
+				}
+			}
+			.modal-footer{
+				background-color: rgb(240, 241, 247);
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+		}
+	}
+}
+
+#remindSound{
+	display: none;
+}

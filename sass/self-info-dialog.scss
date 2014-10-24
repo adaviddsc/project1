@@ -1,0 +1,102 @@
+@import url("external-git.css"); 
+#myModal-info{
+	.modal-dialog{
+		.modal-content{
+			margin: 0 auto;
+			max-width: 600px;
+			border-radius: 5px;
+			.modal-header{
+				.info-h1{
+					position: relative;
+					text-align: center;
+					color: #000000;
+					font-weight: bold;
+				}
+			}
+			.modal-body{
+				padding: 0px;
+				padding-top: 15px;
+				padding-bottom: 10px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				overflow: hidden;
+				background-color: #DFE8EC;
+				form{
+					width: auto;
+					padding: 0 20px;	
+					#sex-form-container-up{	
+						position: relative;
+						width: 100%;			
+						p{
+							position: relative;
+							display: inline-block;
+							font-size: 2.5rem;
+							left: 0px;
+						}
+						.dialog-input{
+							border-style: none;
+							cursor: pointer;
+							border-radius: 5px;
+							font-size: 2.35rem;
+							height: 35px;
+							width: 425px;
+							margin-bottom: 10px;
+							float: right;
+							border: 1px solid #DDDDDD;
+					    	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+						}
+					}
+					#sex-form-container-down{
+						position: relative;
+						width: 100%;
+						height: auto;
+						text-align: center;
+						display: inline-block;
+						.sex{	
+							font-size: 2.5rem;
+						}
+						#male{color: #4169E1;}
+						#female{color: #FF1493;}
+						.dialog-button{
+							text-align: center;
+							position: relative;
+							width: 118px;
+							height: 38px;
+						}
+						#alert-info{
+							color: red;
+							h2{
+								margin-top: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 540px) {
+ 	#myModal-info{
+		.modal-dialog{
+			.modal-content{
+				.modal-body{
+					form{
+						#sex-form-container-up{	
+							.dialog-input{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

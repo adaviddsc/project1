@@ -1,0 +1,266 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/css3";
+
+body{
+	font-family: "Comic Sans MS", "Microsoft JhengHei";
+	font-size: 16px;
+}
+.home-header{
+	position: fixed;
+	z-index: 100;
+	background-color: #CD5C5C;
+	height: 60px;
+	width: 100%;
+	top: 0px;
+	#drop4{
+		.glyphicon-align-justify{
+			display: none;
+		}
+	}
+	.TL-logo-div{
+		display: inline-block;
+		img{
+			position: relative;
+			border-radius: 8px;
+			height: 48px;
+			width: 50px;
+			margin-top: 6px;
+			margin-left: 80px;
+		}
+	}
+	.search-bar{
+		display: inline-block;
+		position: relative;
+		top: 4px;
+		left: 3px;
+		height: 30px;
+		input{
+			position: relative;
+			width: 280px;
+			display: inline-block;
+			left: 3px;
+			padding-right: 30px;
+			height: 30px;
+			letter-spacing: 1px;
+		}
+		.glyphicon-search{
+			font-size: 2rem;
+			position: relative;
+			color: #CD5C5C;
+			left: -28px;
+			cursor: pointer;
+			top: 5px;
+		}
+		.dropdown{
+			display: inline-block;
+			position: relative;
+			left: -12px;
+			padding: 4px;
+			border-radius: 5px;
+			background-color: #FFF;
+			color: #7C1414;
+			cursor: pointer;
+			z-index: 2;
+			box-shadow: 1px 1px 2px #727272;
+			-webkit-transition: .2s linear;
+			#menu1-search{
+				padding: 5px;
+				width: 200px;
+				li{
+					font-size: 2rem;
+					color: #7C1414 !important;
+					border-radius: 5px;
+				}
+				li:hover{
+					background-color: #7C1414;
+					color: white !important;
+					border-radius: 5px;
+				}
+				.active{
+					background-color: #7C1414;
+					color: white !important;
+					border-radius: 5px;
+				}
+			}
+			&:hover{
+				background-color: #7C1414;
+				color: #FFF;
+			}
+		}
+		.dropdown-icon-display{
+			font-size: 20px;
+			color: white;
+			background-color: #F38778;
+			position: relative;
+			left: -23px;
+			z-index: 1;
+			border-radius: 5px;
+			width: 40px;
+			height: 100%;
+			padding-left: 14px;
+			top: 1px;
+			display: none;
+		}
+
+	}
+	#menu1{
+		z-index: 5;
+		left: 100%;
+		margin-left: -162px;
+		padding: 0;
+		li{
+			border-bottom: 1px solid #DFDFDF;
+			background-color: #CD5C5C;
+			cursor: pointer;
+			-webkit-transition: .2s linear;
+			.function-logo{
+				float: left;
+				position: relative;
+				right: -15px;
+				top: 5px;
+				cursor: pointer;
+				padding-right: 20px;
+				color: #fafafa;
+				font-size: 3rem;
+				@include text-shadow(1px 1px 2px #585858);
+			}
+			h1{
+				font-size: 2rem;
+				margin: 0;
+				padding: 9px 0 9px 60px;
+				letter-spacing: 1px;
+				font-weight: bold;
+				color: #fafafa;
+			}
+			&:hover{
+				opacity: .7;
+			}
+		}
+	}
+	.function-logo-div{
+		.function-logo{
+			float: right;
+			position: relative;
+			right: 10px;
+			top: -40px;
+			cursor: pointer;
+			padding-right: 20px;
+			color: #fafafa;
+			font-size: 3rem;
+			@include text-shadow(1px 1px 2px #585858);
+			&:hover{
+				opacity: .7;
+			}
+		}
+	}
+}
+.messageCircle-container{
+	position: fixed;
+	left: 100%;
+	margin-left: -100px;
+	z-index: 5;
+	top: 100px;
+	width: 100px;
+	
+  	.messageCircle-icon{
+		width: 45px;
+		height: 45px;
+		position: relative;
+		background-color: #423b35;
+		color: white;
+		font-size: 2.5rem;
+		border-radius: 50%;
+		float: right;
+		padding: 10px 9px;
+		cursor: pointer;
+		right: 12px;
+		&:hover{
+			background-color: white;
+			color: rgb(66, 59, 53);
+		}
+  	}
+  	.fa-chevron-left{
+  		padding: 11px;
+  	}
+  	.messageCircle-photo-container{
+		position: relative;
+		float: right;
+		right: 5px;
+		top: 5px;
+		.messageCircle-photo-people{
+			width: 60px;
+			height: 60px;
+			position: relative;
+			cursor: pointer;
+			margin-bottom: 5px;
+			display: none;
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				position: absolute;
+			
+			}
+
+			div{
+				width: 45px;
+				height: 45px;
+				position: absolute;
+				background-color: black;
+				z-index: 1;
+				font-size: 2.6rem;
+				padding: 9px 10px;
+				color: white;
+				border-radius: 50%;
+				opacity: .8;
+				right: 55px;
+				top: -19px;
+				display: none;
+			  	&:hover{
+					background-color: white;
+					color: black;
+				}
+			}
+			.messageCircle-fa-times{
+				top: 35px;
+				padding: 10px 12px;
+			}
+			/*&:hover{
+				-webkit-animation:shake 1s .2s ease both;
+			}*/
+		}
+  	}
+}
+
+@media (max-width: 850px){
+	.home-header{
+		#drop4{
+			.glyphicon-align-justify{
+				float: right;
+				display: inline;
+				color: white;
+				background-color: #CD5C5C;
+				border: none;
+				top: 15px;
+				margin-right: 20px;
+				font-size: 2.0rem;
+			}
+		}	
+		#TL-logo{
+			margin-left: 30px;
+		}
+		.function-logo-div{
+			display: none;
+			.function-logo{
+				float: left;
+				position: relative;
+				top: -10px;
+				margin-left: 10px;
+
+			}
+		}
+	}
+}

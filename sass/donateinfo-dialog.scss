@@ -1,0 +1,44 @@
+#myModal-donateinfo{
+	.modal-dialog{
+		#modal-content-donateinfo{
+			height: auto;
+			margin: 0 -100px;
+			.modal-header{
+				div{
+					text-align: center;
+					font-size: 4rem;
+				}
+			}
+			.modal-body{
+				background-color: #DFE8EC;
+				#carousel-example-generic-donate{
+					position: relative;
+					#carousel-inner-donateinfo{
+						div{
+								background-color: rgb(24, 31, 28);;
+							}
+						.item{
+							img{
+								display: block;
+							    margin-left: auto;
+							    margin-right: auto;
+							}
+						}
+					}
+				}
+			}
+			.modal-footer{
+				
+			}
+		}
+	}
+}
+@media (max-width: 805px){
+	#myModal-donateinfo{
+		.modal-dialog{
+			#modal-content-donateinfo{
+				margin:0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,319 @@
+@import url("radio-checkbox1.css");
+/* line 4, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content {
+  height: auto;
+  margin: 0 -50px;
+  border-radius: 5px;
+}
+/* line 8, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-header {
+  padding: 15px 25px;
+  background: #67B1A5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 13, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-header div {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 2px #1B1B1B;
+}
+/* line 19, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-header div h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+/* line 27, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body {
+  position: relative;
+  padding: 10px 10px;
+  background-color: #fff;
+}
+/* line 32, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div {
+  overflow: auto;
+  margin: 15px 15px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #D8D8D8;
+}
+/* line 38, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div:nth-child(3) {
+  border: none;
+}
+/* line 41, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div > i {
+  padding: 7px 5px;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: block;
+  letter-spacing: 5px;
+  color: #242424;
+  text-shadow: 0 2px 2px #FFFFFF;
+  background: -moz-linear-gradient(left, #e4e4e4 0%, rgba(228, 228, 228, 0.8) 46%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e4e4e4), color-stop(46%, rgba(228, 228, 228, 0.8)), color-stop(100%, rgba(125, 185, 232, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #e4e4e4 0%, rgba(228, 228, 228, 0.8) 46%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #e4e4e4 0%, rgba(228, 228, 228, 0.8) 46%, rgba(125, 185, 232, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #e4e4e4 0%, rgba(228, 228, 228, 0.8) 46%, rgba(125, 185, 232, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #e4e4e4 0%, rgba(228, 228, 228, 0.8) 46%, rgba(125, 185, 232, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#007db9e8',GradientType=1 );
+  /* IE6-9 */
+}
+/* line 58, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div > i h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  color: #242424;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+/* line 67, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div > input {
+  height: 35px;
+}
+/* line 69, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div > input:nth-child(2) {
+  width: 65%;
+  float: left;
+  margin-left: 25px;
+}
+/* line 74, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div > input:nth-child(3) {
+  width: 30%;
+  float: right;
+}
+/* line 79, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container {
+  margin-left: 15px;
+}
+/* line 81, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container .bookmark {
+  padding: 0 22px;
+  height: 30px;
+  background: #D6F1E1;
+  float: left;
+  margin: 5px 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #2E2E2E;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/* line 96, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container .bookmark:hover, #myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container .bookmark.active {
+  background: #A4DFBC;
+}
+/* line 99, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container .bookmark::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 111, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div .bookmark-container .bookmark::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  right: 0;
+  border-color: transparent #ffffff transparent transparent;
+  position: absolute;
+}
+/* line 123, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-left: 28px;
+  margin: 15px 0;
+  line-height: 35px;
+  position: relative;
+}
+/* line 131, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span > h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+  color: #242424;
+  letter-spacing: 2px;
+}
+/* line 138, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span label {
+  font-size: 16px;
+  margin: 0 10px 0 0;
+}
+/* line 142, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .atricle-location {
+  display: inline-block;
+  width: 500px;
+  height: 30px;
+  margin-left: 5px;
+}
+/* line 148, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .mood {
+  display: inline-block;
+  position: absolute;
+}
+/* line 151, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .mood i {
+  font-size: 34px;
+  background: #FFFFFF;
+  color: #B7DBD3;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 3px;
+  cursor: pointer;
+}
+/* line 159, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .mood i:hover, #myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .mood i.active {
+  color: #56B19D;
+}
+/* line 164, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images {
+  background: #F5FFF7;
+  margin-left: 85px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+  overflow: auto;
+  position: relative;
+}
+/* line 172, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .add-img-camera {
+  position: absolute;
+  font-size: 28px;
+  left: 48px;
+  top: 68px;
+  text-align: center;
+  color: #9E9E9E;
+  -webkit-transition: .2s linear;
+}
+/* line 180, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .add-img-camera h1 {
+  margin: 0;
+  font-size: 20px;
+}
+/* line 185, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .article-images-div, #myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .add-article-div {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 5px;
+  font-size: 20px;
+  -webkit-transition: .2s linear;
+  z-index: 1;
+  float: left;
+  margin: 5px;
+}
+/* line 196, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .article-images-div img, #myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .add-article-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 202, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .article-images-div .fa-spin, #myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .add-article-div .fa-spin {
+  position: absolute;
+  font-size: 50px;
+  left: 53px;
+  top: 50px;
+}
+/* line 209, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span .self-article-images .article-images-div {
+  cursor: pointer;
+}
+/* line 214, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span textarea {
+  width: 500px;
+  height: 130px;
+  resize: none;
+  margin-left: 85px;
+}
+/* line 220, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-body form > div span:nth-child(6) {
+  margin-bottom: 0;
+}
+/* line 227, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer {
+  overflow: auto;
+}
+/* line 229, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer h2 {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #C91B1B;
+  margin: 0;
+  line-height: 35px;
+  padding-left: 35px;
+}
+/* line 238, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa {
+  width: 130px;
+  height: 35px;
+  float: right;
+  color: white;
+  font-size: 2rem;
+  padding: 7px;
+  -webkit-transition: .2s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px #7C7878;
+  letter-spacing: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 0 3px;
+}
+/* line 254, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa h1 {
+  font-size: 1.9rem;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  margin-left: 5px;
+  text-shadow: 0 1px 2px #444444;
+}
+/* line 262, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa:nth-child(2) {
+  background-color: #B9B9B9;
+  border-bottom: 3px solid #919191;
+}
+/* line 265, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa:nth-child(2):hover {
+  background: #919191;
+}
+/* line 269, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa:nth-child(3) {
+  background-color: #75C2B5;
+  border-bottom: 3px solid #4C9E90;
+}
+/* line 272, ../sass/self-helpadd-dialog.scss */
+#myModal-helpadd .modal-dialog #love-add-modal-content .modal-footer .fa:nth-child(3):hover {
+  background: #4C9E90;
+}

@@ -1,0 +1,48 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/top-frame-index.scss */
+body {
+  font-family: "Comic Sans MS", "Microsoft JhengHei";
+  font-size: 16px;
+}
+
+/* line 12, ../sass/top-frame-index.scss */
+.login-header {
+  position: relative;
+  z-index: 1;
+  background-color: #CD5C5C;
+  height: 60px;
+}
+/* line 17, ../sass/top-frame-index.scss */
+.login-header .glyphicon-log-in, .login-header .glyphicon-globe {
+  right: 30px;
+  padding-right: 19px;
+  margin-top: 13px;
+  font-size: 3rem;
+  float: right;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 2px #585858;
+}
+/* line 26, ../sass/top-frame-index.scss */
+.login-header .glyphicon-log-in:hover, .login-header .glyphicon-globe:hover {
+  opacity: .7;
+}
+/* line 30, ../sass/top-frame-index.scss */
+.login-header #TL-logo {
+  position: absolute;
+  border-radius: 8px;
+  height: 48px;
+  width: 50px;
+  margin-top: 6px;
+  margin-left: 80px;
+}
+
+@media (max-width: 767px) {
+  /* line 41, ../sass/top-frame-index.scss */
+  .login-header #TL-logo {
+    margin-left: 30px;
+  }
+}

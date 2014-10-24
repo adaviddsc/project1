@@ -1,0 +1,61 @@
+/* line 3, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content {
+  height: auto;
+  margin: 0 -100px;
+}
+/* line 7, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-header div {
+  text-align: center;
+  font-size: 4rem;
+}
+/* line 12, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-body {
+  background-color: #DFE8EC;
+}
+/* line 14, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-body #carousel-example-generic {
+  position: relative;
+}
+/* line 17, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-body #carousel-example-generic #carousel-inner-helpinfo div {
+  background-color: #181f1c;
+}
+/* line 21, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-body #carousel-example-generic #carousel-inner-helpinfo .item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 26, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-body #carousel-example-generic #carousel-inner-helpinfo .item button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+/* line 38, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-footer .modal-footer-text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #E2EAF1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+/* line 46, ../sass/helpinfo-dialog.scss */
+#myModal-helpinfo .modal-dialog .modal-content .modal-footer .modal-footer-text div {
+  text-align: left;
+  font-size: 2rem;
+  margin-right: 60px;
+  margin-left: 60px;
+  background-color: #E2EAF1;
+}
+
+@media (max-width: 805px) {
+  /* line 61, ../sass/helpinfo-dialog.scss */
+  #myModal-helpinfo .modal-dialog .modal-content {
+    margin: 0 auto;
+  }
+}

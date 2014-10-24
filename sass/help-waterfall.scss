@@ -1,0 +1,672 @@
+@import url("external-git.css"); 
+body {
+	background-image: url(../images/sprinkles.png);
+
+}
+#myModal-map{
+	.modal-dialog{
+		.modal-content{
+			top: 50px;
+			.modal-header{
+				padding: 10px;
+				background-color: #FF8525;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				.fa-road{
+					color: white;
+					font-size: 2rem;
+					h1{
+						display: inline-block;
+						font-size: 2rem;
+						margin: 0;
+					}
+				}
+			}
+			.modal-body{
+				padding: 0;
+				.googleMap{
+					width:640px;
+					height:480px; 
+					position: relative;
+				}
+				.route-planning-input{
+					width: 100%;
+					
+					background-color: #F0F6F8;
+					padding: 10px 20px 0px 10px;
+					div{
+						img{
+							width: 40px;
+							height: 40px;
+							margin-bottom: 5px;
+						}
+						span{
+							float: right;
+							width: 100%;
+							padding-left: 50px;
+							margin-left: -50px;
+							input{
+								width: 100%;
+								height: 35px;
+								margin-top: 5px;
+								letter-spacing: 2px;
+							}
+						}						
+					}
+				}
+			}
+			.modal-footer{
+				border-top: none;
+				background-color: #F0F6F8;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				padding-top: 8px;
+				.travelmode{
+					float: right;
+					padding: 2px 10px;
+					i{
+						font-size: 20px;
+						width: 30px;
+						line-height: 30px;
+						text-align: center;
+						cursor: pointer;
+						border-radius: 5px;
+						&:hover{
+							opacity: .7;
+						}
+					}
+					.active{
+						background-color: #000;
+						color: #fff;
+					}
+				}
+				.start-routePlanning{
+					height: 35px;
+					position: relative;
+					float: right;
+					color: white;
+					font-size: 2rem;
+					padding: 7px;
+					-webkit-transition: .2s linear;
+					cursor: pointer;
+					border-radius: 5px;
+					text-shadow: 0 1px 2px #7C7878;
+					width: 90px;
+					background-color: #FF8525;
+					border-bottom: 3px solid #976B29;
+					h1{
+						font-size: 1.9rem;
+						display: inline-block;
+						margin: 0;
+						vertical-align: top;
+					}
+					&:hover{
+						color: #FF8525;
+						border-bottom: 3px solid white;
+						background-color: white;
+						text-shadow: 0 0px 0px #7C7878;
+					}
+				}
+			}
+
+		}
+	}
+}
+.labels{
+	color: red;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.labelStart{
+	color: #6aac00;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.labelEnd{
+	color: #44addb;
+	font-weight: bold;
+	font-size: 1.3rem;
+}	
+
+.googleMap-body{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	z-index: 20;
+	.googleMap-container{
+		margin: 0 auto;
+		width: 640px;
+		position: relative;
+		top: 110px;
+		.googleMap{
+			width: 640px;
+			height: 480px;
+		}	
+	}
+	.googleMap-outer{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: #000;
+		opacity: .7;
+	}
+	
+}
+
+#waterfall-container{
+	position: relative;
+	width: 998px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px 17px 0;
+	top: 50px;
+	.change-page{
+		padding: 8px;
+		position: fixed;
+		width: 60px;
+		height: auto;
+		margin-left: -61px;
+		top: 200px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+		background-color: white;
+		span{
+			padding: 5px;
+			position: relative;
+			font-size: 3.2rem;
+			display: block;
+			cursor: pointer;
+			.glyphicon-heart{
+				position: absolute;
+				z-index: 1;
+				color: #fff;
+				font-size: 1.8rem;
+				top: 19px;
+				left: 10px;
+			}
+			&:hover{
+				opacity: 0.7;
+			}
+		}
+		.fa-plus{
+			font-size: 4rem;
+			padding-left: 6px;
+			padding-bottom: 0px;
+		}
+	}
+	.waterfall-columns{
+		position: relative;
+		height: auto;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		top: 10px;
+		.waterfall-div{
+			width: 99%;
+			display: inline-block;
+			background: #FEFEFE;
+			border: solid #FAFAFA;
+			box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+			position: relative;
+			margin: 2px 2px 10px;
+			padding-bottom: 10px;
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+				cursor: pointer;
+			}
+			.waterfall-div-info{
+				position: relative;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0 60px;
+				img{
+					top: 12px;
+					left: -55px;
+					width: 50px;
+					height: 50px;
+					cursor: pointer;
+					z-index: 1;
+					border-radius: 5px;
+				}
+				h1{
+					position: relative;
+					font-size: 2rem;
+					text-align: center;
+					margin-top: -25px;
+
+				}
+			}
+		}
+	}
+	.donate-columns{
+		position: relative;
+		width: 100%;
+		height: 1000px;
+		top: -20px;
+		display: none;
+		#carousel-example-generic-headgallery{
+			position: relative;
+			width: 100%;
+			height: auto;
+			max-height: 400px;
+			background-color: white;
+			margin-top: 20px;
+			.carousel-indicators{
+
+			}
+			.carousel-inner{
+				.item{
+					img{	
+						width: 100%;
+						height: 100%;
+						border-radius: 5px;
+					}
+				}
+			}
+			.carousel-control{
+				border-radius: 5px;
+			}
+		}
+		.donate-columns-content{
+			position: relative;
+			width: 100%;
+			background-color: white;
+			border-radius: 5px;
+			top: 1px;
+			box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+			#donate-choice-bar{
+				background-image: url(../images/sprinkles.png);
+				border-bottom: 2px solid #1A191D;
+				width: 100%;
+				li{
+					font-size: 2.5rem;
+					width: 50%;
+					a{
+						cursor: pointer;
+						width: 100%;
+						height: 60px;
+						text-align: center;
+						background-color: #545457;
+						padding:12px 24px;
+						color: white;
+						opacity: 1;
+						-webkit-transition: .2s linear;
+						&:hover{
+							background-color: white;
+							color: #545457;
+						}
+					}
+				}
+				.active{
+					a{
+
+						height: 62px;
+						background-color: #1A191D;
+						-webkit-transition: .2s linear;
+						&:hover{
+							background-color: white;
+							color: #1A191D;
+						}
+					}
+				}
+			}
+			.donate-columns-content-choice{
+				position: relative;
+				background-image: url(../images/donateBack.png);
+				width: 99.9%;
+				padding-top: 20px;
+				#twzipcode{
+					background-image: url(../images/donateBack.png);
+					width: 465px;
+					height: 35px;
+					margin: 0 auto;
+					#county,#district{
+						float: left;
+						margin-right: 10px;
+						select{
+							height: 35px;
+							width: 105px;
+						}					
+					}
+					div[data-role=zipcode]{
+						display: none;
+					}
+					.fa{
+						height: 35px;
+						position: relative;
+						float: left;
+						color: white;
+						font-size: 2rem;
+						padding: 7px;
+						-webkit-transition: .2s linear;
+						cursor: pointer;						
+						border-radius: 5px;
+						text-shadow: 0 1px 2px #7C7878;
+						h1{
+							font-size: 1.9rem;
+							display: inline-block;
+							margin: 0;
+							vertical-align: top;
+						}
+						&:hover{
+							border-bottom: 3px solid white;
+							background-color: white;
+							//-webkit-animation:shake 1s .2s ease both;
+							text-shadow: 0 0px 0px #7C7878;
+						}
+					}
+					.twzipcode-location{
+						width: 107px;						
+						background-color: #58EC70;	
+						margin-right: 10px;		
+						border-bottom: 3px solid #3FB13F;														
+						&:hover{
+							color: #58EC70;
+						}
+					}
+					.twzipcode-road{
+						width: 117px;
+						background-color: #FF8525;
+						border-bottom: 3px solid #976B29;	
+						&:hover{
+							color: #FF8525;
+						}
+					}
+				}
+			}
+			.donate-columns-content-container{
+				background-image: url(../images/donateBack.png);
+				width: 99.9%;
+				position: relative;
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+				padding: 15px;
+				overflow-x: hidden;
+				.address-circle-container{
+					position:fixed;
+					top: 200px;
+					z-index: 5;
+					margin-left: -15px;
+					.address-circle{
+						width: 45px;
+						height: 45px;
+						position: relative;
+						border-radius: 50%;
+						background-color: black;
+						opacity: 1;
+						color: white;
+						font-size: 2.5rem;
+						padding: 11px 10px;
+						cursor: pointer;
+						-webkit-transition: .2s linear;
+						display: block;
+						top: 7px;
+						&:hover{
+							color: black;
+							background-color: white;
+						}
+					}
+					.address-district1{
+						left: 0px;
+						position: relative;
+						float: left;
+						display: none;
+						
+						div{
+							position: relative;
+							background-color: #1EC5AA;
+							opacity: .9;
+							color: white;
+							width: 120px;
+							margin-bottom: 1px;
+							text-align: center;
+							line-height: 40px;
+							-webkit-transition: .2s linear;
+							cursor: pointer;
+							top: 9px;
+							.district1-triangle{
+								width: 0;
+								height: 0;
+								border-top: 10px solid transparent;
+								border-right: 12px solid black;
+								border-bottom: 10px solid transparent;
+								position: absolute;
+								left: 100%;
+								margin-left: -12px;
+								top: 10px;
+							}
+						}
+						div:hover,.active{
+							.district1-triangle{
+								border-top: 10px solid white;
+								border-right: 12px solid black;
+								border-bottom: 10px solid white;
+							}
+							color: black;
+							background-color: white;
+						}
+					}
+					.address-district2{
+						position: relative;
+						float: right;
+						top: -157px;
+						width: 242px;
+						display: none;
+						div{
+							position: relative;
+							background-color: black;
+							opacity: .9;
+							color: white;
+							width: 120px;
+							margin: 0 1px 1px 0;
+							text-align: center;
+							line-height: 40px;
+							-webkit-transition: .2s linear;
+							cursor: pointer;
+							top: 2px;
+							float: left;
+							&:hover{
+								color: black;
+								background-color: white;
+							}
+						}
+					}
+				}
+				.donate-columns-content-div{
+					width: 99%;
+					display: inline-block;
+					background: #FEFEFE;
+					border: solid #FAFAFA;
+					box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+					position: relative;
+					margin: 2px 2px 10px;
+					&:hover{
+						opacity: .9;
+						.addLocation{
+							display: block;
+						}
+					}
+
+					.addLocation{
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						position: absolute;
+						background-color: white;
+						color: #FF5656;
+						z-index: 1;
+						font-size: 2.9rem;
+						padding: 6px 6px;
+						left: 100%;
+						margin-left: -45px;
+						top: 5px;
+						cursor: pointer;
+						-webkit-transition: .2s linear;
+						display: none;
+						.fa-plus{
+							font-size: 1.0rem;
+							position: absolute;
+							z-index: 2;
+							left: 16px;
+							top: 11px;
+						}
+						&:hover{
+							color: #812E2E;
+						}
+					}
+					.glyphicon-ok{
+						display: block;
+						padding: 6px 5px;
+					}
+
+					img {
+						position: relative;
+						width: 100%;
+						cursor: pointer;
+					}
+					.donate-columns-content-div-info{
+						position: relative;
+						width: 100%;
+						margin: 0 auto;
+						padding: 0 60px;
+						img{
+							top: 12px;
+							left: -55px;
+							width: 50px;
+							height: 50px;
+							cursor: pointer;
+							z-index: 1;
+							border-radius: 5px;
+						}
+						div{
+							float: right;
+							position: relative;
+							left: 40px;
+							font-size: 3rem;
+							cursor: pointer;
+							color: #812E2E;
+							margin-top: 19px;
+							margin-left: -29px;						
+						}
+						h1{
+							position: relative;
+							font-size: 2rem;
+							text-align: center;
+							margin: 0;
+							overflow : hidden;
+							text-overflow : ellipsis;
+							white-space : nowrap;
+							width : 171px;
+							top: -28px;
+						}			
+					}
+					.donate-columns-content-info-container{
+						width: 96%;
+						position: relative;
+						background-color: #ecf5f3;
+						top: 17px;
+						display: none;
+						margin: 6px;
+						margin-bottom: 8px;
+						border-radius: 7px;
+						border: 2px solid;
+						.info-container-triangle{
+							border-left: 15px solid white;
+							border-bottom: 15px solid #262E25;
+							border-right: 15px solid white;
+							display: inline-block;
+							float: right;
+							position: absolute;
+							right: 14px;
+							top: -17px;
+						}
+						.info-container-top{
+							width: 100%;
+							background-color: #262E25;
+							position: relative;
+							text-align: center;
+							color: white;
+							padding: 10px;
+							font-size: 2.2rem;
+						}	
+						.info-container-text{
+							width: 100%;
+							position: relative;					
+							.info-container-text-container{
+								font-size: 2rem;
+								width: 100%;
+								padding: 13px;
+								span{
+									position: relative;
+									float: left;
+									padding-top: 3px;
+								}
+								div{
+									position: relative;
+									padding-left: 30px;
+								}
+								.fa-map-marker{
+									padding-left: 3px;
+								}	
+								.glyphicon-phone-alt{
+									font-size: 1.9rem;
+								}
+								
+							}
+							.info-container-time{
+								text-align: right;
+								padding-bottom: 11px;
+								padding-right: 14px;
+								font-size: 1.8rem;
+							}
+						}	
+					}					
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 1105px){		
+	#waterfall-container {
+		width: 666px;
+		.waterfall-columns {
+			-webkit-column-count: 2; 
+			-moz-column-count: 2;
+			column-count: 2;		
+		}
+	}
+}
+
+@media (max-width: 775px){	
+	#waterfall-container {
+		width: 555px;
+	}
+}
+@media (max-width: 665px){	
+	#waterfall-container {
+		width: 500px;
+	}
+}
+@media (max-width: 615px){	
+	#waterfall-container {
+		width: 400px;
+		.waterfall-columns {
+			-webkit-column-count: 1; 
+			-moz-column-count: 1;
+			column-count: 1;
+
+		}
+	}
+}
+
+
+
+
+
