@@ -99,9 +99,7 @@ if ( isset( $_COOKIE['profileID'] ) ){
 		<script src="external/jquery.bookblock.js"></script>
 		<!--external-->
 	</head>
-	<body style="overflow-x: hidden">
-	
-	</body>
+
 	<!--external-->
 	<script src="external/bootstrap.min.js"></script>
 	<!--external-->
