@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <?php
 session_start();
 include("account/connect.php");
