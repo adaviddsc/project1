@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <?php
-yes
 session_start();
 include("account/connect.php");
 include("language.php");
