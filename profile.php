@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+master_add
+>>>>>>> master
 <!DOCTYPE HTML>
 <?php
 session_start();
