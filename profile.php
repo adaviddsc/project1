@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-master_add
 <?php
 session_start();
 include("account/connect.php");
