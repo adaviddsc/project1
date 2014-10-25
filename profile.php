@@ -1,4 +1,15 @@
+test_add
 <!DOCTYPE HTML>
+<?php
+session_start();
+include("account/connect.php");
+include("language.php");
+if ( isset( $_COOKIE['language'] ) ){
+	$language = $_COOKIE['language'];
+}
+else{
+	$language = "zh-tw";
+}
 
 $lang = new Language();
 $lang->load($language);
