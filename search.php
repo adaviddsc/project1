@@ -5,6 +5,14 @@
 <?php
 
 include("account/connect.php");
+include("language.php");
+$username = $_SESSION['username'];
+if ( isset( $_COOKIE['language'] ) ){
+        $language = $_COOKIE['language'];
+}
+else{
+        $language = "zh-tw";
+}
 
 
 ?>
