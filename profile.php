@@ -101,10 +101,10 @@ if ( isset( $_COOKIE['profileID'] ) ){
 	</head>
 
 	<body style="overflow-x: hidden">
-	<h1>aaaaaaaaaa</h1>
 	</body>
 
 	<!--external-->
 	<script src="external/bootstrap.min.js"></script>
 	<!--external-->
 </html>
+fuck
