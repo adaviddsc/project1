@@ -107,4 +107,3 @@ if ( isset( $_COOKIE['profileID'] ) ){
 	<script src="external/bootstrap.min.js"></script>
 	<!--external-->
 </html>
-fuck
