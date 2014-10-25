@@ -1,14 +1,4 @@
-
-<?php
-session_start();
-include("account/connect.php");
-include("language.php");
-if ( isset( $_COOKIE['language'] ) ){
-	$language = $_COOKIE['language'];
-}
-else{
-	$language = "zh-tw";
-}
+<!DOCTYPE HTML>
 
 $lang = new Language();
 $lang->load($language);
