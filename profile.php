@@ -101,7 +101,7 @@ if ( isset( $_COOKIE['profileID'] ) ){
 	</head>
 
 	<body style="overflow-x: hidden">
-	<h1>fucfuckfuckk</h1>
+	<h1>sssss</h1>
 	</body>
 
 	<!--external-->
