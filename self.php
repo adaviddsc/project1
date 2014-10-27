@@ -22,6 +22,7 @@ if ( isset( $_SESSION['username'] ) ){
 	echo "selfTitle = new Array();";
 	echo "selfDate = new Array();";
 	echo "selfBookmark = new Array();";
+	echo "selfBookmark_lan = new Array();";
 	echo "selfTime = new Array();";
 	echo "selfPosition = new Array();";
 	echo "selfMood = new Array();";
@@ -50,6 +51,7 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "		selfTitle[d] = '".$row[0]."';";
 		echo "		selfDate[d] = '".$row[1]."';";
 		echo "		selfBookmark[d] = '".$row[2]."';";
+		echo "		selfBookmark_lan[d] = '".$lang->line($row[2])."';";
 		echo "		selfTime[d] = '".$str_Time."';";
 		echo "		selfPosition[d] = '".$row[4]."';";
 		echo "		selfMood[d] = '".$row[5]."';";
@@ -80,6 +82,7 @@ if ( isset( $_SESSION['username'] ) ){
 	echo "travelTitle = new Array();";
 	echo "travelDate = new Array();";
 	echo "travelBookmark = new Array();";
+	echo "travelBookmark_lan = new Array();";
 	echo "travelTime = new Array();";
 	echo "travelPosition = new Array();";
 	echo "travelMood = new Array();";
@@ -108,6 +111,7 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "		travelTitle[d] = '".$row[0]."';";
 		echo "		travelDate[d] = '".$row[1]."';";
 		echo "		travelBookmark[d] = '".$row[2]."';";
+		echo "		travelBookmark_lan[d] = '".$lang->line($row[2])."';";
 		echo "		travelTime[d] = '".$str_Time."';";
 		echo "		travelPosition[d] = '".$row[4]."';";
 		echo "		travelMood[d] = '".$row[5]."';";

@@ -143,8 +143,8 @@ if ( isset( $_COOKIE['profileID'] ) || isset( $_SESSION['username'] ) ){
 		</div>
 
 		<div class="article-body">
-			<div class="bookmark-container">
-				<div class="left-bookmark active" value="all">全部</div>
+			<div class="bookmark-container" id="append_mark">
+				<!--<div class="left-bookmark active" value="all">全部</div>
 				<div class="left-bookmark" value="food">美食</div>
 	    		<div class="left-bookmark" value="music">音樂</div>
 	    		<div class="left-bookmark" value="photograph">攝影</div>
@@ -159,7 +159,7 @@ if ( isset( $_COOKIE['profileID'] ) || isset( $_SESSION['username'] ) ){
 	    		<div class="left-bookmark" value="religion">宗教</div>
 	    		<div class="left-bookmark" value="love">愛情</div>
 	    		<div class="left-bookmark" value="fashion">時尚</div>
-	    		<div class="left-bookmark" value="other">其他</div>
+	    		<div class="left-bookmark" value="other">其他</div>-->
 			</div>
 			<div class="book-left"></div>
 			<div class="book-right">

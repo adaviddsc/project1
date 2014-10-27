@@ -41,4 +41,26 @@ $lang['daybreak'] = "凌晨";
 $lang['morning'] = "早上";
 $lang['afternoon'] = "下午";
 $lang['night'] = "晚上";
+
+$lang['taiwan'] = "台灣";
+$lang['japan'] = "日本";
+$lang['franch'] = "法國";
+$lang['america'] = "美國";
+$lang['hawaii'] = "夏威夷";
+
+$lang['food'] = "美食";
+$lang['music'] = "音樂";
+$lang['photograph'] = "攝影";
+$lang['movie'] = "電影";
+$lang['animal'] = "動物";
+$lang['design'] = "設計";
+$lang['sport'] = "運動";
+$lang['book'] = "書籍";
+$lang['science'] = "科技";
+$lang['activity'] = "活動";
+$lang['architecture'] = "建築";
+$lang['religion'] = "宗教";
+$lang['love'] = "愛情";
+$lang['fashion'] = "時尚";
+$lang['other'] = "其他";
 ?>
