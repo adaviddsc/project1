@@ -74,6 +74,64 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "}";
 		echo "</script>"; 
 	}
+
+
+	echo "<script>"; 
+	echo "travelTitle = new Array();";
+	echo "travelDate = new Array();";
+	echo "travelBookmark = new Array();";
+	echo "travelTime = new Array();";
+	echo "travelPosition = new Array();";
+	echo "travelMood = new Array();";
+	echo "travelText = new Array();";
+	echo "travelImg = new Array();";
+	echo "</script>";
+
+	$sql = "SELECT DISTINCT travelTitle,travelDate,travelBookmark,travelTime,travelPosition,travelMood,travelText FROM travel_article WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		$str_array = array();
+		$str_Time = "";
+		$str_array = explode(",",$row[3]);
+		for ($i=0; $i<4; $i++){
+			if ( isset($str_array[$i]) && $i!=0){
+				$str_Time = $str_Time.'/'.$lang->line($str_array[$i]);
+			}
+			if ( isset($str_array[$i]) && $i==0){
+				$str_Time = $str_Time.$lang->line($str_array[$i]);
+			}
+		}
+		echo "<script>"; 
+		echo "for(var d=0;d<=99999;d++){";
+		echo "	if(travelTitle[d]==undefined){";
+		echo "		travelTitle[d] = '".$row[0]."';";
+		echo "		travelDate[d] = '".$row[1]."';";
+		echo "		travelBookmark[d] = '".$row[2]."';";
+		echo "		travelTime[d] = '".$str_Time."';";
+		echo "		travelPosition[d] = '".$row[4]."';";
+		echo "		travelMood[d] = '".$row[5]."';";
+		echo "		travelText[d] = '".$row[6]."';";
+		echo "		travelImg['".$row[0]."'] = new Array();";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>"; 
+	}
+
+	$sql = "SELECT travelTitle,travelImg FROM travel_article WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		echo "<script>"; 
+		echo "for(var d=0;d<=99999;d++){";
+		echo "	if(travelImg['".$row[0]."'][d]==undefined){";
+		echo "		travelImg['".$row[0]."'][d] = '".$row[1]."';";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>"; 
+	}
 }
 
 $sql = "SELECT DISTINCT commentsUser FROM comments";

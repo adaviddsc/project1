@@ -23,13 +23,56 @@ readURL = function(input, img) {
 };
 
 $(function() {
-  $(".bookmark").on("click", function(event) {
-    if (!$(this).hasClass('active')){
-      $(".bookmark").removeClass('active');
-      $(this).addClass('active');
-      $("#bookmark-input").attr('value',$(this).attr('value'));
+  $('#myModal-helpadd').on('show.bs.modal', function (e) {
+    var index = $(this).attr('article-index');
+    $('#article-choice').attr('value',index);
+    if(index==0){
+      $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-plane');
+      $('.article-title-icon h1').text('旅遊記事');
+      $('#article-bookmark').html('<div class="bookmark plus-mark" id="plus-mark"><i class="fa fa-plus"></i><select class="form-control"><option value="taiwan" selected>台灣</option><option value="japan">日本</option><option value="franch">法國</option><option value="america">美國</option><option value="hawaii">夏威夷</option></select></i></div>');
+      $(".bookmark").unbind('click').on("click", function(event) {
+        if (!$(this).hasClass('active')){
+          $('#bookmark-input').attr('value',$("#plus-mark").children('select').val());
+          $(".bookmark").removeClass('active');
+          $(this).addClass('active');
+          $("#bookmark-input").attr('value',$(this).attr('value'));
+          if ($(this).hasClass('plus-mark')){
+            $(this).css('width','125px');
+            $(this).addClass('active');
+            $(this).children('i').hide();
+            $(this).children('select').show();
+            $(this).children('select').unbind('change').on("change", function(event) {
+              $('#bookmark-input').attr('value',$(this).val());
+            });
+          }
+          else{
+            $('#plus-mark').removeClass('active');
+            $('#plus-mark').css('width','70px');
+            $('#plus-mark').children('i').show();
+            $('#plus-mark').children('select').hide();
+          }
+        }
+      });
+    }
+    if(index==1){
+      $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-heart');
+      $('.article-title-icon h1').text('慈善心得');
+
+    }
+    if(index==2){
+      $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-coffee');
+      $('.article-title-icon h1').text('心情雜記');
+      $('#article-bookmark').html('<div class="bookmark" value="food">美食</div><div class="bookmark" value="music">音樂</div><div class="bookmark" value="photograph">攝影</div><div class="bookmark" value="movie">電影</div><div class="bookmark" value="animal">動物</div><div class="bookmark" value="design">設計</div><div class="bookmark" value="sport">運動</div><div class="bookmark" value="book">書籍</div><div class="bookmark" value="science">科技</div><div class="bookmark" value="activity">活動</div><div class="bookmark" value="architecture">建築</div><div class="bookmark" value="religion">宗教</div><div class="bookmark" value="love">愛情</div><div class="bookmark" value="fashion">時尚</div><div class="bookmark active" value="other">其他</div>');
+      $(".bookmark").unbind('click').on("click", function(event) {
+        if (!$(this).hasClass('active')){
+          $(".bookmark").removeClass('active');
+          $(this).addClass('active');
+          $("#bookmark-input").attr('value',$(this).attr('value'));
+        }
+      });
     }
   });
+
   $(".mood").children('i').on("click", function(event) {
     if (!$(this).hasClass('active')){
       $(".mood").children('i').removeClass('active');

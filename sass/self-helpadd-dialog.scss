@@ -32,13 +32,13 @@
 					& > div{
 						overflow: auto;
 						margin: 15px 15px 0;
-						padding-bottom: 15px;
-						border-bottom: 1px dashed #D8D8D8;
-
-						&:nth-child(3){
-							border: none;
+						&:nth-child(4){
+							padding-bottom: 15px;
 						}
 						& > i{
+							&:nth-child(1){
+								margin-bottom: 15px;
+							}
 							padding: 7px 5px;
 							border-top-left-radius: 18px;
 							border-bottom-left-radius: 18px;
@@ -78,6 +78,23 @@
 						}
 						.bookmark-container{
 							margin-left: 15px;
+							#plus-mark{
+								width: 70px;
+								i{
+									font-size: 18px;
+									color: #498E65;
+								}
+								select{
+									height: 24px;
+									font-size: 12px;
+									padding: 0;
+									width: 80px;
+									position: relative;
+									display: inline-block;
+									top: -1px;
+									display: none;
+								}
+							}
 							.bookmark{
 								padding: 0 22px;
 								height: 30px;
@@ -97,7 +114,7 @@
 									background: #A4DFBC;
 								}
 								&::before {
-								    content: "";
+									content: "";
 									width: 10px;
 									height: 10px;
 									border-radius: 50%;

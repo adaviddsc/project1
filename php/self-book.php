@@ -105,11 +105,11 @@ if ( isset( $_COOKIE['profileID'] ) || isset( $_SESSION['username'] ) ){
 	</div>
 	<div class="add-article">
 		<div class="add-article-circle">
-			<div class="quater-circle">
+			<div class="quater-circle" data-toggle="modal" data-target="#myModal-helpadd">
 				<i class="fa fa-plane"></i>
 				<h1>旅遊記事</h1>
 			</div>
-			<div class="quater-circle">
+			<div class="quater-circle" data-toggle="modal" data-target="#myModal-helpadd">
 				<i class="fa fa-heart"></i>
 				<h1>慈善心得</h1>
 			</div>

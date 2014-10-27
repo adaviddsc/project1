@@ -38,6 +38,9 @@ $(function() {
       $(this).children('h1').removeClass('shake animated');
     }
   );
+  $('.quater-circle').on("click", function(event) {
+    $("#myModal-helpadd").attr('article-index',$(this).index());
+  });
   $('.quater-circle').hover(
     function() {
       var index = $(this).index();
@@ -168,24 +171,25 @@ $(function() {
       }
     }
     if ($(this).index() == 0 && get_active!=0) {
-      $("."+bookmark).eq(get_active).addClass('fadeOutLeft animated');
+      $("."+bookmark).eq(get_active).addClass('fadeOutRight animated');
       $("."+bookmark).eq(get_active-1).addClass('active');
       setTimeout(function () {
-        $("."+bookmark).eq(get_active).removeClass('fadeOutLeft animated').removeClass('active');
-      }, 1000);
+        $("."+bookmark).eq(get_active).removeClass('fadeOutRight animated').removeClass('active');
+      }, 600);
     }
     if ($(this).index() == 1 && (get_active+1)!=$("."+bookmark).length) {
       $("."+bookmark).eq(get_active).addClass('fadeOutLeft animated');
       $("."+bookmark).eq(get_active+1).addClass('active');
       setTimeout(function () {
         $("."+bookmark).eq(get_active).removeClass('fadeOutLeft animated').removeClass('active');
-      }, 1000);
+      }, 600);
     }
     
   });
   
 
-  if (selfTitle[0]!=undefined){
+$(".article-content").click(function() {
+  if (selfTitle[0]!=undefined && $(this).index()==2){
     var title = 0;
     while (selfTitle[title]!=undefined){
       $(".book-right").append('<div class="all self-article-div '+selfBookmark[title]+'"><div class="article-img-container"><div class="img-hidden"></div><div class="filp-img"><i class="fa fa-arrows-h open-flip"><div></div></i><i class="fa fa-long-arrow-left flip-arrow"></i><i class="fa fa-long-arrow-right flip-arrow"></i></div></div><div class="article-content-container"><div class="left-container"><div class="fa fa-tag"><h1>'+selfTitle[title]+'</h1></div><div class="fa fa-clock-o"><h1>'+selfTime[title]+'</h1></div><div class="fa fa-umbrella"><h1><i class="fa fa-smile-o article-mood" value="smile"></i><i class="fa fa-meh-o article-mood" value="soso"></i><i class="fa fa-frown-o article-mood" value="down"></i></h1></div><div class="fa fa-location-arrow"><h2>'+selfPosition[title]+'</h2></div><div class="article-date">'+selfDate[title]+'</div></div><div class="right-container"><span class="fa fa-pencil">記事</span><div class="article-text">'+selfText[title]+'</div></div></div></div>');
@@ -281,6 +285,7 @@ $(function() {
       }
     });
   }
-  
+});
+
 
 });

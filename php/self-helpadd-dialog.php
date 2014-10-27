@@ -23,10 +23,11 @@ $lang->load($language);
 		<div class="modal-content" id="love-add-modal-content">
 		    <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-		        <div class="h1-login-register fa fa-coffee"><h1>心情雜記</h1></div>
+		        <div class="article-title-icon"><h1></h1></div>
 		    </div>
 		    <div class="modal-body" id="love-add-modal-body">
 			    <form id="self-article-edit" enctype="multipart/form-data" name="form" method="post" action="account/edit-helpstory.php">
+			    	<input type="hidden" name="article" id="article-choice">
 			    	<div class="self-article-title">
 			    		<i class="fa fa-tag"><h1>輸入文章標題</h1></i>
 			    		<input type="text" class="form-control" placeholder="標題" name="title">
@@ -34,7 +35,8 @@ $lang->load($language);
 			    	</div>
 			    	<div class="self-article-bookmark">
 			    		<i class="fa fa-bookmark"><h1>選擇書籤</h1></i>
-			    		<div class="bookmark-container">
+			    		<input type="hidden" name="bookmark" id="bookmark-input">
+			    		<div class="bookmark-container" id="article-bookmark">
 			    			<div class="bookmark" value="food">美食</div>
 				    		<div class="bookmark" value="music">音樂</div>
 				    		<div class="bookmark" value="photograph">攝影</div>
@@ -51,7 +53,7 @@ $lang->load($language);
 				    		<div class="bookmark" value="fashion">時尚</div>
 				    		<div class="bookmark active" value="other">其他</div>
 			    		</div>
-			    		<input type="hidden" name="bookmark" id="bookmark-input" value="other">
+			    		
 			    	</div>
 			    	<div class="self-article-content">
 			    		<i class="fa fa-pencil-square-o"><h1>文章內容</h1></i>
