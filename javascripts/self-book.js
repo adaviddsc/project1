@@ -286,6 +286,6 @@ $(".article-content").click(function() {
     });
   }
 });
-
+$(".article-content").eq(2).click();
 
 });
