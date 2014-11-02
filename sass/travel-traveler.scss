@@ -2,14 +2,15 @@
 //@import url("csshake.css");
 .gm-style-iw{
 	div{
-		width: 100% !important;
+		width: 360px !important;
 		margin: 0;
+		overflow: hidden;
 	}
 }
 .infobox{
 	width: 100%;
 	p{
-		margin: 5px 6px;
+		margin: 5px 0px 5px 6px;
 		border-bottom: 1px solid #B9B5B5;
 		width: 345px;
 		letter-spacing: 1px;

@@ -77,6 +77,65 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "</script>"; 
 	}
 
+	echo "<script>"; 
+	echo "helpTitle = new Array();";
+	echo "helpDate = new Array();";
+	echo "helpBookmark = new Array();";
+	echo "helpBookmark_lan = new Array();";
+	echo "helpTime = new Array();";
+	echo "helpPosition = new Array();";
+	echo "helpMood = new Array();";
+	echo "helpText = new Array();";
+	echo "helpImg = new Array();";
+	echo "</script>";
+
+	$sql = "SELECT DISTINCT helpTitle,helpDate,helpBookmark,helpTime,helpPosition,helpMood,helpText FROM help_article WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		$str_array = array();
+		$str_Time = "";
+		$str_array = explode(",",$row[3]);
+		for ($i=0; $i<4; $i++){
+			if ( isset($str_array[$i]) && $i!=0){
+				$str_Time = $str_Time.'/'.$lang->line($str_array[$i]);
+			}
+			if ( isset($str_array[$i]) && $i==0){
+				$str_Time = $str_Time.$lang->line($str_array[$i]);
+			}
+		}
+		echo "<script>"; 
+		echo "for(var d=0;d<=99999;d++){";
+		echo "	if(helpTitle[d]==undefined){";
+		echo "		helpTitle[d] = '".$row[0]."';";
+		echo "		helpDate[d] = '".$row[1]."';";
+		echo "		helpBookmark[d] = '".$row[2]."';";
+		//echo "		helpBookmark_lan[d] = '".$lang->line($row[2])."';";
+		echo "		helpTime[d] = '".$str_Time."';";
+		echo "		helpPosition[d] = '".$row[4]."';";
+		echo "		helpMood[d] = '".$row[5]."';";
+		echo "		helpText[d] = '".$row[6]."';";
+		echo "		helpImg['".$row[0]."'] = new Array();";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>"; 
+	}
+
+	$sql = "SELECT helpTitle,helpImg FROM help_article WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		echo "<script>"; 
+		echo "for(var d=0;d<=99999;d++){";
+		echo "	if(helpImg['".$row[0]."'][d]==undefined){";
+		echo "		helpImg['".$row[0]."'][d] = '".$row[1]."';";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>"; 
+	}
+
 
 	echo "<script>"; 
 	echo "travelTitle = new Array();";
@@ -135,6 +194,24 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "	}";
 		echo "}";
 		echo "</script>"; 
+	}
+
+	$sql = "SELECT DISTINCT travelBookmark FROM travel_article WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+	echo "<script>";
+	echo "dis_Bookmark = new Array();";
+	echo "dis_Bookmark_lan = new Array();";
+	echo "</script>";
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		echo "<script>"; 
+		echo "for(var d=0;d<=999999;d++){";
+		echo "	if(dis_Bookmark[d]==undefined){";
+		echo "		dis_Bookmark[d] = '".$row[0]."';";
+		echo "		dis_Bookmark_lan[d] = '".$lang->line($row[0])."';";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>";
 	}
 }
 

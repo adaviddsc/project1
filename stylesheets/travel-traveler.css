@@ -1,17 +1,18 @@
 @import url("animate.css");
 /* line 4, ../sass/travel-traveler.scss */
 .gm-style-iw div {
-  width: 100% !important;
+  width: 360px !important;
   margin: 0;
+  overflow: hidden;
 }
 
-/* line 9, ../sass/travel-traveler.scss */
+/* line 10, ../sass/travel-traveler.scss */
 .infobox {
   width: 100%;
 }
-/* line 11, ../sass/travel-traveler.scss */
+/* line 12, ../sass/travel-traveler.scss */
 .infobox p {
-  margin: 5px 6px;
+  margin: 5px 0px 5px 6px;
   border-bottom: 1px solid #B9B5B5;
   width: 345px;
   letter-spacing: 1px;
@@ -21,14 +22,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 23, ../sass/travel-traveler.scss */
+/* line 24, ../sass/travel-traveler.scss */
 .infobox .map-travel-district {
   width: 340px;
   height: 200px;
   padding: 5px;
   display: inline-block;
 }
-/* line 28, ../sass/travel-traveler.scss */
+/* line 29, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img {
   height: 100%;
   width: 100%;
@@ -37,7 +38,7 @@
   border-radius: 5px;
   overflow: hidden;
 }
-/* line 35, ../sass/travel-traveler.scss */
+/* line 36, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .travel-selfimg-outerline {
   position: absolute;
   width: 55px !important;
@@ -50,18 +51,18 @@
   left: 13px;
   z-index: 1;
 }
-/* line 46, ../sass/travel-traveler.scss */
+/* line 47, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .travel-selfimg-outerline .map-travel-selfimg {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-/* line 52, ../sass/travel-traveler.scss */
+/* line 53, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .travel-titleimg-mapdiv {
   padding-left: 40px;
   height: 100%;
 }
-/* line 55, ../sass/travel-traveler.scss */
+/* line 56, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .travel-titleimg-mapdiv img {
   width: 100%;
   height: 100%;
@@ -70,7 +71,7 @@
   z-index: 0;
   top: 0px;
 }
-/* line 64, ../sass/travel-traveler.scss */
+/* line 65, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .fa-angle-up, .infobox .map-travel-district .map-travel-img .fa-angle-down {
   position: absolute;
   font-size: 40px;
@@ -83,16 +84,16 @@
   width: 33px;
   display: none;
 }
-/* line 75, ../sass/travel-traveler.scss */
+/* line 76, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .fa-angle-up:hover, .infobox .map-travel-district .map-travel-img .fa-angle-down:hover {
   -webkit-transition: .2s linear;
   opacity: 1;
 }
-/* line 80, ../sass/travel-traveler.scss */
+/* line 81, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img .fa-angle-down {
   bottom: 0px;
 }
-/* line 83, ../sass/travel-traveler.scss */
+/* line 84, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img::before {
   content: "`";
   background-color: white;
@@ -105,7 +106,7 @@
   left: 12px;
   top: 25px;
 }
-/* line 95, ../sass/travel-traveler.scss */
+/* line 96, ../sass/travel-traveler.scss */
 .infobox .map-travel-district .map-travel-img::after {
   content: "`";
   background-color: white;
@@ -119,18 +120,18 @@
   top: 150px;
 }
 
-/* line 111, ../sass/travel-traveler.scss */
+/* line 112, ../sass/travel-traveler.scss */
 .traveler-container {
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
   overflow: hidden;
 }
-/* line 114, ../sass/travel-traveler.scss */
+/* line 115, ../sass/travel-traveler.scss */
 .traveler-container .googleMap-traveler {
   width: 100%;
   height: 400px;
   position: absolute;
 }
-/* line 119, ../sass/travel-traveler.scss */
+/* line 120, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container {
   position: relative;
   left: 100%;
@@ -140,7 +141,7 @@
   border-radius: 5px;
   margin-top: 30px;
 }
-/* line 127, ../sass/travel-traveler.scss */
+/* line 128, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container > .fa-globe {
   width: 45px;
   position: absolute;
@@ -155,39 +156,39 @@
   border-top-left-radius: 40px;
   cursor: pointer;
 }
-/* line 141, ../sass/travel-traveler.scss */
+/* line 142, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district {
   width: 100%;
   border: 2px solid #073C5F;
   border-radius: 5px;
   background: #F3F3F3;
 }
-/* line 146, ../sass/travel-traveler.scss */
+/* line 147, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-header {
   width: 100%;
   height: 40px;
   background: #073C5F;
   padding: 8px;
 }
-/* line 151, ../sass/travel-traveler.scss */
+/* line 152, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-header .fa-check-square-o {
   font-size: 20px;
   display: inline-block;
   color: #fff;
 }
-/* line 156, ../sass/travel-traveler.scss */
+/* line 157, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-header h1 {
   font-size: 20px;
   display: inline-block;
   color: #fff;
   margin: 0px;
 }
-/* line 163, ../sass/travel-traveler.scss */
+/* line 164, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content {
   width: 100%;
   padding: 10px;
 }
-/* line 166, ../sass/travel-traveler.scss */
+/* line 167, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select {
   width: 100%;
   background: #fff;
@@ -195,7 +196,7 @@
   border-radius: 5px;
   margin-bottom: 10px;
 }
-/* line 172, ../sass/travel-traveler.scss */
+/* line 173, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select span {
   display: block;
   font-size: 16px;
@@ -204,40 +205,40 @@
   font-weight: bold;
   text-align: center;
 }
-/* line 179, ../sass/travel-traveler.scss */
+/* line 180, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select span .fa-globe {
   display: inline-block;
 }
-/* line 182, ../sass/travel-traveler.scss */
+/* line 183, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select span h1 {
   font-size: 16px;
   margin: 0;
   text-align: center;
   display: inline-block;
 }
-/* line 189, ../sass/travel-traveler.scss */
+/* line 190, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select > select {
   height: 25px;
   font-size: 10px;
   padding: 0px 10px;
   margin: 5px auto;
 }
-/* line 195, ../sass/travel-traveler.scss */
+/* line 196, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select #googlemap-selecter-select {
   margin: 5px auto;
 }
-/* line 197, ../sass/travel-traveler.scss */
+/* line 198, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select #googlemap-selecter-select select {
   height: 25px;
   font-size: 10px;
   padding: 0px 10px;
   display: none;
 }
-/* line 203, ../sass/travel-traveler.scss */
+/* line 204, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-country-select #googlemap-selecter-select :nth-child(1) {
   display: block;
 }
-/* line 208, ../sass/travel-traveler.scss */
+/* line 209, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-selecter-button {
   width: 100%;
   line-height: 35px;
@@ -249,46 +250,46 @@
   -webkit-transition: .2s linear;
   cursor: pointer;
 }
-/* line 218, ../sass/travel-traveler.scss */
+/* line 219, ../sass/travel-traveler.scss */
 .traveler-container .map-selecter-container .select-district .traveler-selecter-content .traveler-selecter-button:hover {
   background: #0981AF;
 }
-/* line 226, ../sass/travel-traveler.scss */
+/* line 227, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info {
   background: #fff;
   padding: 5px;
   display: inline-table;
   width: 100%;
 }
-/* line 231, ../sass/travel-traveler.scss */
+/* line 232, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title {
   margin: 7px 6px;
   padding: 8px 40px;
   border-bottom: 1px dotted #B8B8B8;
 }
-/* line 235, ../sass/travel-traveler.scss */
+/* line 236, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title .fa-globe {
   font-size: 20px;
 }
-/* line 238, ../sass/travel-traveler.scss */
+/* line 239, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title .fa-caret-square-o-down {
   font-size: 16px;
 }
-/* line 241, ../sass/travel-traveler.scss */
+/* line 242, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title h1, .traveler-container .map-travel-info .map-travel-title h2, .traveler-container .map-travel-info .map-travel-title h3 {
   margin: 0px;
   font-size: 20px;
   display: inline-block;
 }
-/* line 246, ../sass/travel-traveler.scss */
+/* line 247, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title h2 {
   padding-right: 30px;
 }
-/* line 249, ../sass/travel-traveler.scss */
+/* line 250, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title h3 {
   font-size: 16px;
 }
-/* line 252, ../sass/travel-traveler.scss */
+/* line 253, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title select {
   height: 25px;
   font-size: 10px;
@@ -297,23 +298,23 @@
   top: -2px;
   display: inline-block;
 }
-/* line 261, ../sass/travel-traveler.scss */
+/* line 262, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title #article-selecter1 {
   width: 130px;
   margin-right: 10px;
 }
-/* line 265, ../sass/travel-traveler.scss */
+/* line 266, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-title #article-selecter2 {
   width: 80px;
 }
-/* line 269, ../sass/travel-traveler.scss */
+/* line 270, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district {
   width: 50%;
   height: 280px;
   padding: 5px;
   display: inline-block;
 }
-/* line 274, ../sass/travel-traveler.scss */
+/* line 275, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img {
   height: 100%;
   width: 100%;
@@ -322,7 +323,7 @@
   border-radius: 5px;
   overflow: hidden;
 }
-/* line 281, ../sass/travel-traveler.scss */
+/* line 282, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline {
   position: absolute;
   width: 70px;
@@ -335,7 +336,7 @@
   left: 5px;
   z-index: 1;
 }
-/* line 292, ../sass/travel-traveler.scss */
+/* line 293, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .map-travel-selfimg {
   width: 100%;
   height: 100%;
@@ -344,7 +345,7 @@
   position: absolute;
   z-index: 2;
 }
-/* line 300, ../sass/travel-traveler.scss */
+/* line 301, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location {
   width: 100%;
   height: 100%;
@@ -355,7 +356,7 @@
   z-index: 1;
   text-shadow: 0 1px 2px #666;
 }
-/* line 309, ../sass/travel-traveler.scss */
+/* line 310, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love {
   width: 49%;
   height: 100%;
@@ -366,7 +367,7 @@
   padding-top: 7px;
   display: none;
 }
-/* line 318, ../sass/travel-traveler.scss */
+/* line 319, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love p {
   height: 26px;
   width: 95px;
@@ -374,46 +375,46 @@
   display: block;
   line-height: 25px;
 }
-/* line 324, ../sass/travel-traveler.scss */
+/* line 325, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love p:nth-child(1) {
   border-bottom: 2px dotted #FFF;
 }
-/* line 328, ../sass/travel-traveler.scss */
+/* line 329, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love:nth-child(1) {
   background: #F0A276;
   border-top-left-radius: 33px;
   border-bottom-left-radius: 33px;
   float: left;
 }
-/* line 334, ../sass/travel-traveler.scss */
+/* line 335, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love:nth-child(2) {
   background: #70D1DA;
   border-top-right-radius: 33px;
   border-bottom-right-radius: 33px;
   float: right;
 }
-/* line 339, ../sass/travel-traveler.scss */
+/* line 340, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love:nth-child(2) p {
   border: none;
   line-height: 50px;
 }
-/* line 342, ../sass/travel-traveler.scss */
+/* line 343, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love:nth-child(2) p:nth-child(1) {
   display: none;
   font-size: 30px;
 }
-/* line 349, ../sass/travel-traveler.scss */
+/* line 350, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-selfimg-outerline .find-location .comment-and-love:hover {
   position: relative;
   top: -2px;
   box-shadow: 0 1px 2px #000;
 }
-/* line 358, ../sass/travel-traveler.scss */
+/* line 359, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-titleimg-div {
   padding-left: 40px;
   height: 100%;
 }
-/* line 361, ../sass/travel-traveler.scss */
+/* line 362, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .travel-titleimg-div img {
   width: 100%;
   height: 100%;
@@ -422,7 +423,7 @@
   z-index: 0;
   top: 0px;
 }
-/* line 370, ../sass/travel-traveler.scss */
+/* line 371, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .corner {
   position: absolute;
   width: 0px;
@@ -432,7 +433,7 @@
   z-index: 0;
   box-shadow: 0px 3px 10px #0F0F0F;
 }
-/* line 379, ../sass/travel-traveler.scss */
+/* line 380, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .corner div {
   width: 0;
   height: 0;
@@ -441,7 +442,7 @@
   border-color: transparent #BB2644 transparent transparent;
   cursor: pointer;
 }
-/* line 386, ../sass/travel-traveler.scss */
+/* line 387, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .corner div i {
   position: absolute;
   font-size: 35px;
@@ -451,7 +452,7 @@
   width: 25px;
   text-align: center;
 }
-/* line 397, ../sass/travel-traveler.scss */
+/* line 398, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .fa-angle-up, .traveler-container .map-travel-info .map-travel-district .map-travel-img .fa-angle-down {
   position: absolute;
   font-size: 50px;
@@ -465,16 +466,16 @@
   width: 33px;
   display: none;
 }
-/* line 409, ../sass/travel-traveler.scss */
+/* line 410, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .fa-angle-up:hover, .traveler-container .map-travel-info .map-travel-district .map-travel-img .fa-angle-down:hover {
   -webkit-transition: .2s linear;
   opacity: 1;
 }
-/* line 414, ../sass/travel-traveler.scss */
+/* line 415, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img .fa-angle-down {
   bottom: 0px;
 }
-/* line 417, ../sass/travel-traveler.scss */
+/* line 418, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img::before {
   content: "`";
   background-color: white;
@@ -487,7 +488,7 @@
   left: 12px;
   top: 40px;
 }
-/* line 429, ../sass/travel-traveler.scss */
+/* line 430, ../sass/travel-traveler.scss */
 .traveler-container .map-travel-info .map-travel-district .map-travel-img::after {
   content: "`";
   background-color: white;
@@ -500,44 +501,44 @@
   left: 12px;
   top: 210px;
 }
-/* line 447, ../sass/travel-traveler.scss */
+/* line 448, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content {
   border-radius: 7px;
   height: auto;
   margin: 0 -100px;
 }
-/* line 451, ../sass/travel-traveler.scss */
+/* line 452, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-body {
   background: #525252;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 455, ../sass/travel-traveler.scss */
+/* line 456, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-body button {
   color: #fff;
   opacity: .8;
 }
-/* line 458, ../sass/travel-traveler.scss */
+/* line 459, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-body button:hover {
   color: #000;
 }
-/* line 462, ../sass/travel-traveler.scss */
+/* line 463, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-body #carousel-example-generic {
   background: #6F6F6F;
   width: 80%;
   margin: 0 auto;
 }
-/* line 469, ../sass/travel-traveler.scss */
+/* line 470, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-body #carousel-example-generic #carousel-inner-travelinfo .item img {
   margin: 0 auto;
   max-height: 500px;
 }
-/* line 478, ../sass/travel-traveler.scss */
+/* line 479, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer {
   text-align: left;
   background: #fbfbfb;
 }
-/* line 481, ../sass/travel-traveler.scss */
+/* line 482, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-selfimg {
   width: 100px;
   height: 100px;
@@ -547,20 +548,20 @@
   border: 5px solid #FFF;
   border-radius: 50%;
 }
-/* line 489, ../sass/travel-traveler.scss */
+/* line 490, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-selfimg img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-/* line 495, ../sass/travel-traveler.scss */
+/* line 496, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-title {
   width: 100%;
   padding: 10px;
   text-align: center;
   color: #000;
 }
-/* line 500, ../sass/travel-traveler.scss */
+/* line 501, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-title h1 {
   display: inline-block;
   font-size: 30px;
@@ -571,19 +572,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 511, ../sass/travel-traveler.scss */
+/* line 512, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo {
   margin: 10px;
   padding: 0 20px;
 }
-/* line 514, ../sass/travel-traveler.scss */
+/* line 515, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons {
   line-height: 60px;
   height: 55px;
   border-radius: 5px;
   text-align: center;
 }
-/* line 519, ../sass/travel-traveler.scss */
+/* line 520, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons span {
   width: 50px;
   height: 50px;
@@ -595,111 +596,111 @@
   cursor: pointer;
   -webkit-transition: .2s linear;
 }
-/* line 529, ../sass/travel-traveler.scss */
+/* line 530, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons span i {
   line-height: 50px;
 }
-/* line 535, ../sass/travel-traveler.scss */
+/* line 536, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(1) i {
   font-size: 30px;
 }
-/* line 538, ../sass/travel-traveler.scss */
+/* line 539, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(1):hover, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(1).active {
   background: #72E2A8;
 }
-/* line 543, ../sass/travel-traveler.scss */
+/* line 544, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(2) i {
   font-size: 23px;
 }
-/* line 546, ../sass/travel-traveler.scss */
+/* line 547, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(2):hover, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(2).active {
   background: #72D0E2;
 }
-/* line 551, ../sass/travel-traveler.scss */
+/* line 552, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(3) i {
   font-size: 26px;
 }
-/* line 554, ../sass/travel-traveler.scss */
+/* line 555, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(3):hover, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(3).active {
   background: #E0DA3D;
 }
-/* line 559, ../sass/travel-traveler.scss */
+/* line 560, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(4) i {
   font-size: 26px;
 }
-/* line 562, ../sass/travel-traveler.scss */
+/* line 563, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(4):hover, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(4).active {
   background: #E27272;
 }
-/* line 567, ../sass/travel-traveler.scss */
+/* line 568, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(5) i {
   font-size: 26px;
   padding-left: 4px;
 }
-/* line 571, ../sass/travel-traveler.scss */
+/* line 572, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(5):hover, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-icons > :nth-child(5).active {
   background: #9EE93F;
 }
-/* line 576, ../sass/travel-traveler.scss */
+/* line 577, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container {
   background: #FFFFFF;
   height: auto;
   border-radius: 5px;
 }
-/* line 580, ../sass/travel-traveler.scss */
+/* line 581, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container span {
   display: none;
   border-radius: 5px;
   width: 100%;
 }
-/* line 584, ../sass/travel-traveler.scss */
+/* line 585, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container span.active {
   display: block;
 }
-/* line 589, ../sass/travel-traveler.scss */
+/* line 590, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(1) {
   border: 1px dashed #72E2A8;
   background: #E5FFEE;
   line-height: 50px;
   padding-left: 15px;
 }
-/* line 595, ../sass/travel-traveler.scss */
+/* line 596, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(2) {
   border: 1px dashed #72D0E2;
   background: #E5FAFF;
   line-height: 50px;
   padding-left: 15px;
 }
-/* line 601, ../sass/travel-traveler.scss */
+/* line 602, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(3) {
   border: 1px dashed #E0DA3D;
   background: #FFF9E5;
   line-height: 50px;
   padding-left: 15px;
 }
-/* line 607, ../sass/travel-traveler.scss */
+/* line 608, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(4) {
   border: 1px dashed #E27272;
   background: #FFEBE5;
   line-height: 50px;
   padding-left: 15px;
 }
-/* line 612, ../sass/travel-traveler.scss */
+/* line 613, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(4) h1, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(4) h2 {
   margin: auto 5px;
   display: inline-block;
   font-size: 16px;
 }
-/* line 617, ../sass/travel-traveler.scss */
+/* line 618, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(4) h1 {
   display: none;
 }
-/* line 621, ../sass/travel-traveler.scss */
+/* line 622, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(5) {
   height: 200px;
   border: 1px dashed #9EE93F;
 }
-/* line 624, ../sass/travel-traveler.scss */
+/* line 625, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .travelinfo-iconinfo .travelinfo-info-container > :nth-child(5) textarea {
   border: none;
   resize: none;
@@ -708,7 +709,7 @@
   background: #E9FFE5;
   padding: 10px;
 }
-/* line 635, ../sass/travel-traveler.scss */
+/* line 636, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .asymptotic-line {
   height: 1px;
   margin: 0 10px;
@@ -727,11 +728,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-9 */
 }
-/* line 646, ../sass/travel-traveler.scss */
+/* line 647, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container {
   padding: 10px 30px;
 }
-/* line 648, ../sass/travel-traveler.scss */
+/* line 649, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-title {
   display: block;
   margin: 0;
@@ -741,27 +742,27 @@
   font-weight: bold;
   text-align: center;
 }
-/* line 658, ../sass/travel-traveler.scss */
+/* line 659, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment {
   border-top: 1px dotted #CFCECE;
   min-height: 50px;
   padding: 10px;
   overflow: auto;
 }
-/* line 663, ../sass/travel-traveler.scss */
+/* line 664, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-/* line 668, ../sass/travel-traveler.scss */
+/* line 669, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info {
   float: right;
   width: 100%;
   margin-left: -70px;
   padding-left: 70px;
 }
-/* line 673, ../sass/travel-traveler.scss */
+/* line 674, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info h1, .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info h2 {
   margin: 0;
   font-size: 16px;
@@ -769,18 +770,18 @@
   word-break: normal;
   display: block;
 }
-/* line 680, ../sass/travel-traveler.scss */
+/* line 681, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info h2 {
   display: none;
 }
-/* line 682, ../sass/travel-traveler.scss */
+/* line 683, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info h2 textarea {
   width: 100%;
   border: 1px dotted #8F8F8F;
   height: 50px;
   resize: none;
 }
-/* line 689, ../sass/travel-traveler.scss */
+/* line 690, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info h2::before {
   content: "";
   position: absolute;
@@ -790,13 +791,13 @@
   border-right: 13px solid #ADA2A2;
   border-bottom: 10px solid transparent;
 }
-/* line 700, ../sass/travel-traveler.scss */
+/* line 701, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info .comment-icons {
   height: 20px;
   float: right;
   margin: 5px 0px;
 }
-/* line 704, ../sass/travel-traveler.scss */
+/* line 705, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info .comment-icons i {
   width: 20px;
   line-height: 20px;
@@ -808,40 +809,40 @@
   cursor: pointer;
   margin: 0 2px;
 }
-/* line 714, ../sass/travel-traveler.scss */
+/* line 715, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info .comment-icons i:hover {
   opacity: .7;
 }
-/* line 717, ../sass/travel-traveler.scss */
+/* line 718, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-div .people-comment .comment-info .comment-icons i.active {
   background: #000;
 }
-/* line 725, ../sass/travel-traveler.scss */
+/* line 726, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input {
   border-top: 1px dotted #CFCECE;
   padding: 10px;
 }
-/* line 728, ../sass/travel-traveler.scss */
+/* line 729, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-/* line 733, ../sass/travel-traveler.scss */
+/* line 734, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input div {
   float: right;
   width: 100%;
   margin-left: -70px;
   padding-left: 70px;
 }
-/* line 738, ../sass/travel-traveler.scss */
+/* line 739, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input div textarea {
   width: 100%;
   border: 1px dotted #8F8F8F;
   height: 50px;
   resize: none;
 }
-/* line 745, ../sass/travel-traveler.scss */
+/* line 746, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input div::before {
   content: "";
   position: absolute;
@@ -851,7 +852,7 @@
   border-right: 13px solid #ADA2A2;
   border-bottom: 10px solid transparent;
 }
-/* line 755, ../sass/travel-traveler.scss */
+/* line 756, ../sass/travel-traveler.scss */
 .traveler-container #myModal-travelinfo .modal-dialog .modal-content .modal-footer .comment-container .comment-input div input {
   position: absolute;
   opacity: 0;

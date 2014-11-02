@@ -30,6 +30,11 @@ $(function() {
       $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-plane');
       $('.article-title-icon h1').text('旅遊記事');
       $('#article-bookmark').html('<div class="bookmark plus-mark" id="plus-mark"><i class="fa fa-plus"></i><select class="form-control"><option value="taiwan" selected>台灣</option><option value="japan">日本</option><option value="franch">法國</option><option value="america">美國</option><option value="hawaii">夏威夷</option></select></i></div>');
+      var count_i=0;
+      while (dis_Bookmark[count_i]!=undefined){
+        $('#article-bookmark').append('<div class="bookmark" value="'+dis_Bookmark[count_i]+'">'+dis_Bookmark_lan[count_i]+'</div>');
+        count_i++;
+      }
       $(".bookmark").unbind('click').on("click", function(event) {
         if (!$(this).hasClass('active')){
           $('#bookmark-input').attr('value',$("#plus-mark").children('select').val());
@@ -57,7 +62,14 @@ $(function() {
     if(index==1){
       $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-heart');
       $('.article-title-icon h1').text('慈善心得');
-
+      $('#article-bookmark').html('<div class="bookmark" value="resource">物資提供</div><div class="bookmark" value="labor">勞力協助</div><div class="bookmark" value="other">其他</div>');
+      $(".bookmark").unbind('click').on("click", function(event) {
+        if (!$(this).hasClass('active')){
+          $(".bookmark").removeClass('active');
+          $(this).addClass('active');
+          $("#bookmark-input").attr('value',$(this).attr('value'));
+        }
+      });
     }
     if(index==2){
       $('.article-title-icon').removeClass('fa fa-heart fa-coffee fa-plane').addClass('fa fa-coffee');

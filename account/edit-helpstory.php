@@ -53,7 +53,31 @@ if( $article==0 ){
         array_push($data,array('data' => 'error','message' => '填入資料未完整'));
     }
 }
+else if( $article==1 ){
+    if( $username != null && $title != null && $date != null && $bookmark != null && $time != null && $position != null && $mood != null && $text != null && $_FILES['fileToUpload']["tmp_name"][0]!=null )
+    {
+        $user_dir="upload";
+        if (!is_dir("../".$user_dir."/".$username)) {
+            mkdir("../".$user_dir."/".$username,0777);
+        }
 
+        $num_files = count($_FILES['fileToUpload']['tmp_name']);
+        for($i=0; $i < $num_files;$i++)
+        {
+            if($_FILES['fileToUpload']["tmp_name"][$i]!=null){
+                move_uploaded_file( $_FILES['fileToUpload']["tmp_name"][$i], iconv("utf-8", "big5", "../".$user_dir."/".$username."/".$_FILES['fileToUpload']["name"][$i]) );
+                $address= $user_dir."/".$username."/".$_FILES['fileToUpload']["name"][$i];
+                $sql = "INSERT into help_article (username, helpTitle, helpDate, helpBookmark, helpTime, helpPosition, helpMood, helpImg, helpText) values ('$username', '$title', '$date', '$bookmark', '$time', '$position', '$mood', '$address', '$text')";
+                mysql_query($sql);
+            }
+        }
+        array_push($data,array('data' => 'success','message' => '發文成功'));
+    }
+    else
+    {
+        array_push($data,array('data' => 'error','message' => '填入資料未完整'));
+    }
+}
 else if( $article==2 ){
     if( $username != null && $title != null && $date != null && $bookmark != null && $time != null && $position != null && $mood != null && $text != null && $_FILES['fileToUpload']["tmp_name"][0]!=null )
     {
