@@ -77,6 +77,24 @@ if ( isset( $_SESSION['username'] ) ){
 		echo "</script>"; 
 	}
 
+	$sql = "SELECT DISTINCT selfBookmark FROM selfarticle WHERE username = '$idSelf'";
+	$result = mysql_query($sql);
+	echo "<script>";
+	echo "dis_selfBookmark = new Array();";
+	echo "dis_selfBookmark_lan = new Array();";
+	echo "</script>";
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		echo "<script>"; 
+		echo "for(var d=0;d<=999999;d++){";
+		echo "	if(dis_selfBookmark[d]==undefined){";
+		echo "		dis_selfBookmark[d] = '".$row[0]."';";
+		echo "		dis_selfBookmark_lan[d] = '".$lang->line($row[0])."';";
+		echo "		break;";
+		echo "	}";
+		echo "}";
+		echo "</script>";
+	}
+
 	echo "<script>"; 
 	echo "helpTitle = new Array();";
 	echo "helpDate = new Array();";

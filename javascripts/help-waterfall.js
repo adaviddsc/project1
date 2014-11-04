@@ -447,9 +447,17 @@ $(function() {
 
 
 
-  for (var count=0;count<c;count++){
-    $(".waterfall-columns").append('<div class="waterfall-div"><img data-toggle="modal" data-target="#myModal-helpinfo" title="'+help_title_indexPhoto[count]+'" src="'+help_indexPhoto[count]+'"><div class="waterfall-div-info"><img name="'+help_username[count]+'" title="'+help_title_indexPhoto[count]+'" src="'+username_photo[help_username[count]]+'"><h1>'+help_title_indexPhoto[count]+'</h1></div></div>');
-  }   
+  var count=0;
+  while(helpUsername[count]!=undefined && helpTitle[count]!=undefined){
+    if (helpUsername[count]!=undefined && helpTitle[count]!=undefined){
+      $(".waterfall-columns").append('<div class="waterfall-div"><img data-toggle="modal" data-target="#myModal-helpinfo" name="'+helpUsername[count]+'" title="'+helpTitle[count]+'" src="'+helpImg[helpUsername[count]+helpTitle[count]][0]+'"><div class="waterfall-div-info"><img src="'+username_photo[helpUsername[count]]+'"><h1>'+helpTitle[count]+'</h1></div></div>');
+    }
+    else{
+      break;
+    }
+    count++;
+  }
+
   $(".waterfall-div-info img").on('click',function(event){
     if ( $(this).attr("name")==session ){
       document.location.href="self.php";
@@ -464,22 +472,22 @@ $(function() {
     $('#carousel-indicators-helpinfo li').remove();
     $('#carousel-inner-helpinfo div').remove();
     $('#modal-footer-helpinfo div').remove();
-    $('#modal-header-info').append('<div class="modal-header-title">'+help_title[$(this).attr("title")]+'</div>');            
+    $('#modal-header-info').append('<div class="modal-header-title">'+$(this).attr("title")+'</div>');            
     for (var c=1;c<=999999;c++){    
-      if (help_title_photo[$(this).attr("title")][c-1]!=undefined){
+      if (helpImg[$(this).attr("name")+$(this).attr("title")][c-1]!=undefined){
         if (c==1){
           $('#carousel-indicators-helpinfo').append('<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>');
-          $('#carousel-inner-helpinfo').append('<div class="item active"><img src="'+help_title_photo[$(this).attr("title")][c-1]+'"></div>');
+          $('#carousel-inner-helpinfo').append('<div class="item active"><img src="'+helpImg[$(this).attr("name")+$(this).attr("title")][c-1]+'"></div>');
         }
         else{
           var temp = c-1;
           $('#carousel-indicators-helpinfo').append('<li data-target="#carousel-example-generic" data-slide-to="'+temp+'" class=""></li>');
-          $('#carousel-inner-helpinfo').append('<div class="item"><img src="'+help_title_photo[$(this).attr("title")][temp]+'"></div>');
+          $('#carousel-inner-helpinfo').append('<div class="item"><img src="'+helpImg[$(this).attr("name")+$(this).attr("title")][temp]+'"></div>');
         }
       }
       else{break;}
     }
-    $('#modal-footer-helpinfo').append('<div class="modal-footer-text"><div>'+help_text[$(this).attr("title")]+'</div></div>');     
+    //$('#modal-footer-helpinfo').append('<div class="modal-footer-text"><div>'+help_text[$(this).attr("title")]+'</div></div>');     
   });
 
   $(".travelmode i").on('click',function(event){

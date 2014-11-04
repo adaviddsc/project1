@@ -32,7 +32,66 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 }
 
 
+echo "<script>"; 
+echo "helpUsername = new Array();";
+echo "helpTitle = new Array();";
+echo "helpDate = new Array();";
+echo "helpBookmark = new Array();";
+echo "helpBookmark_lan = new Array();";
+echo "helpTime = new Array();";
+echo "helpPosition = new Array();";
+echo "helpMood = new Array();";
+echo "helpText = new Array();";
+echo "helpImg = new Array();";
+echo "</script>";
 
+$sql = "SELECT DISTINCT username,helpTitle,helpDate,helpBookmark,helpTime,helpPosition,helpMood,helpText FROM help_article";
+$result = mysql_query($sql);
+
+while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+	$str_array = array();
+	$str_Time = "";
+	$str_array = explode(",",$row[4]);
+	for ($i=0; $i<4; $i++){
+		if ( isset($str_array[$i]) && $i!=0){
+			$str_Time = $str_Time.'/'.$lang->line($str_array[$i]);
+		}
+		if ( isset($str_array[$i]) && $i==0){
+			$str_Time = $str_Time.$lang->line($str_array[$i]);
+		}
+	}
+	echo "<script>"; 
+	echo "for(var d=0;d<=99999;d++){";
+	echo "	if(helpUsername[d]==undefined && helpTitle[d]==undefined){";
+	echo "		helpUsername[d] = '".$row[0]."';";
+	echo "		helpTitle[d] = '".$row[1]."';";
+	echo "		helpDate[d] = '".$row[2]."';";
+	echo "		helpBookmark[d] = '".$row[3]."';";
+	//echo "		helpBookmark_lan[d] = '".$lang->line($row[2])."';";
+	echo "		helpTime[d] = '".$str_Time."';";
+	echo "		helpPosition[d] = '".$row[5]."';";
+	echo "		helpMood[d] = '".$row[6]."';";
+	echo "		helpText[d] = '".$row[7]."';";
+	echo "		helpImg['".$row[0].$row[1]."'] = new Array();";
+	echo "		break;";
+	echo "	}";
+	echo "}";
+	echo "</script>"; 
+}
+
+$sql = "SELECT username,helpTitle,helpImg FROM help_article";
+$result = mysql_query($sql);
+
+while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+	echo "<script>"; 
+	echo "for(var d=0;d<=99999;d++){";
+	echo "	if(helpImg['".$row[0].$row[1]."'][d]==undefined){";
+	echo "		helpImg['".$row[0].$row[1]."'][d] = '".$row[2]."';";
+	echo "		break;";
+	echo "	}";
+	echo "}";
+	echo "</script>"; 
+}
 /*$sql = "SELECT * FROM helpstoryphoto";
 $result = mysql_query($sql);
 echo "<script>"; 
@@ -207,7 +266,9 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 			<span class="glyphicon glyphicon-heart" id="waterfall-glyphicon-heart"></span>
 			<span class="fa fa-plus" data-toggle="modal" data-target="#myModal-donate"></span>
 		</div>
-		<div class="waterfall-columns"></div>
+		<div class="waterfall-columns">
+			<!--<div class="waterfall-div"><img data-toggle="modal" data-target="#myModal-helpinfo" title="hi" src="images/台灣.jpg"><div class="waterfall-div-info"><img name="99" title="22" src="images/日本.jpg"><h1>我是標題</h1></div></div>-->
+		</div>
 
 		<div class="donate-columns">
 			<div id="carousel-example-generic-headgallery" class="carousel slide donate-columns-header" data-ride="carousel">

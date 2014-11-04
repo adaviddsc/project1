@@ -92,7 +92,7 @@ else if( $article==2 ){
             if($_FILES['fileToUpload']["tmp_name"][$i]!=null){
                 move_uploaded_file( $_FILES['fileToUpload']["tmp_name"][$i], iconv("utf-8", "big5", "../".$user_dir."/".$username."/".$_FILES['fileToUpload']["name"][$i]) );           
                 $address= $user_dir."/".$username."/".$_FILES['fileToUpload']["name"][$i];
-                $sql = "INSERT into travelarticle (username, travelTitle, travelDate, travelBookmark, travelTime, travelPosition, travelMood, travelImg, travelText) values ('$username', '$title', '$date', '$bookmark', '$time', '$position', '$mood', '$address', '$text')";
+                $sql = "INSERT into selfarticle (username, selfTitle, selfDate, selfBookmark, selfTime, selfPosition, selfMood, selfImg, selfText) values ('$username', '$title', '$date', '$bookmark', '$time', '$position', '$mood', '$address', '$text')";
                 mysql_query($sql);
             }
         }
