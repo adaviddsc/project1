@@ -202,6 +202,7 @@ body {
 		-moz-column-count: 3;
 		column-count: 3;
 		top: 10px;
+		display: none;
 		.waterfall-div{
 			width: 99%;
 			display: inline-block;
@@ -250,7 +251,7 @@ body {
 		width: 100%;
 		height: 1000px;
 		top: -20px;
-		display: none;
+		display: block;
 		#carousel-example-generic-headgallery{
 			position: relative;
 			width: 100%;

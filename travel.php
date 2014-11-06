@@ -175,6 +175,67 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 	echo "}";
 	echo "</script>"; 
 }
+
+echo "<script>"; 
+echo "travelUsername = new Array();";
+echo "travelTitle = new Array();";
+echo "travelDate = new Array();";
+echo "travelBookmark = new Array();";
+echo "travelBookmark_lan = new Array();";
+echo "travelTime = new Array();";
+echo "travelPosition = new Array();";
+echo "travelMood = new Array();";
+echo "travelText = new Array();";
+echo "travelImg = new Array();";
+echo "</script>";
+
+$sql = "SELECT DISTINCT username,travelTitle,travelDate,travelBookmark,travelTime,travelPosition,travelMood,travelText FROM travel_article";
+$result = mysql_query($sql);
+
+while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+	$str_array = array();
+	$str_Time = "";
+	$str_array = explode(",",$row[4]);
+	for ($i=0; $i<4; $i++){
+		if ( isset($str_array[$i]) && $i!=0){
+			$str_Time = $str_Time.'/'.$lang->line($str_array[$i]);
+		}
+		if ( isset($str_array[$i]) && $i==0){
+			$str_Time = $str_Time.$lang->line($str_array[$i]);
+		}
+	}
+	echo "<script>"; 
+	echo "for(var d=0;d<=99999;d++){";
+	echo "	if(travelUsername[d]==undefined && travelTitle[d]==undefined){";
+	echo "		travelUsername[d] = '".$row[0]."';";
+	echo "		travelTitle[d] = '".$row[1]."';";
+	echo "		travelDate[d] = '".$row[2]."';";
+	echo "		travelBookmark[d] = '".$row[3]."';";
+	//echo "		helpBookmark_lan[d] = '".$lang->line($row[2])."';";
+	echo "		travelTime[d] = '".$str_Time."';";
+	echo "		travelPosition[d] = '".$row[5]."';";
+	echo "		travelMood[d] = '".$row[6]."';";
+	echo "		travelText[d] = '".$row[7]."';";
+	echo "		travelImg['".$row[0].$row[1]."'] = new Array();";
+	echo "		break;";
+	echo "	}";
+	echo "}";
+	echo "</script>"; 
+}
+
+$sql = "SELECT username,travelTitle,travelImg FROM travel_article";
+$result = mysql_query($sql);
+
+while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+	echo "<script>"; 
+	echo "for(var d=0;d<=99999;d++){";
+	echo "	if(travelImg['".$row[0].$row[1]."'][d]==undefined){";
+	echo "		travelImg['".$row[0].$row[1]."'][d] = '".$row[2]."';";
+	echo "		break;";
+	echo "	}";
+	echo "}";
+	echo "</script>"; 
+}
 ?>
 <html>
 	<head>
@@ -196,7 +257,7 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 	<body style="overflow-x: hidden">
 		<div class="travel-container">
 			<div class="travelPage-nav">
-				<div>
+				<div id="link-travel-waterfall">
 					<i class="fa fa-plane"></i>
 					<i class="glyphicon glyphicon-book"></i>
 				</div>

@@ -16,13 +16,13 @@ session_start();
 		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>		        
 		    </div>
 		    <div class="modal-body">
-		      	<div id="carousel-example-generic-travelinfo" class="carousel slide" data-ride="carousel">
+		      	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			      	<ol class="carousel-indicators" id="carousel-indicators-helpinfo"></ol>
 			    	<div class="carousel-inner" id="carousel-inner-helpinfo"></div>
-			      	<a class="left carousel-control" href="#carousel-example-generic-travelinfo" role="button" data-slide="prev">
+			      	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			        	<span class="glyphicon glyphicon-chevron-left"></span>
 			      	</a>
-			      	<a class="right carousel-control" href="#carousel-example-generic-travelinfo" role="button" data-slide="next">
+			      	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 			        	<span class="glyphicon glyphicon-chevron-right"></span>
 			      	</a>
 			    </div>
@@ -53,4 +53,3 @@ session_start();
 		</div>
 	</div>
 </div>
-

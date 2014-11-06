@@ -14,7 +14,8 @@ session_start();
 		<link rel="stylesheet" href="external/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="external/bootstrap.min.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+		<link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" />
+		<script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 		<!--external-->
 	</head>
 	<body>

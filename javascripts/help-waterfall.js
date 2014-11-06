@@ -450,7 +450,7 @@ $(function() {
   var count=0;
   while(helpUsername[count]!=undefined && helpTitle[count]!=undefined){
     if (helpUsername[count]!=undefined && helpTitle[count]!=undefined){
-      $(".waterfall-columns").append('<div class="waterfall-div"><img data-toggle="modal" data-target="#myModal-helpinfo" name="'+helpUsername[count]+'" title="'+helpTitle[count]+'" src="'+helpImg[helpUsername[count]+helpTitle[count]][0]+'"><div class="waterfall-div-info"><img src="'+username_photo[helpUsername[count]]+'"><h1>'+helpTitle[count]+'</h1></div></div>');
+      $(".waterfall-columns").append('<div class="waterfall-div"><img data-toggle="modal" data-target="#myModal-helpinfo" count="'+count+'" src="'+helpImg[helpUsername[count]+helpTitle[count]][0]+'"><div class="waterfall-div-info"><img src="'+username_photo[helpUsername[count]]+'"><h1>'+helpTitle[count]+'</h1></div></div>');
     }
     else{
       break;
@@ -472,22 +472,29 @@ $(function() {
     $('#carousel-indicators-helpinfo li').remove();
     $('#carousel-inner-helpinfo div').remove();
     $('#modal-footer-helpinfo div').remove();
-    $('#modal-header-info').append('<div class="modal-header-title">'+$(this).attr("title")+'</div>');            
+    $('#modal-header-info').append('<div class="modal-header-title">'+helpTitle[$(this).attr("count")]+'</div>');            
     for (var c=1;c<=999999;c++){    
-      if (helpImg[$(this).attr("name")+$(this).attr("title")][c-1]!=undefined){
+      if (helpImg[helpUsername[$(this).attr("count")]+helpTitle[$(this).attr("count")]][c-1]!=undefined){
         if (c==1){
           $('#carousel-indicators-helpinfo').append('<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>');
-          $('#carousel-inner-helpinfo').append('<div class="item active"><img src="'+helpImg[$(this).attr("name")+$(this).attr("title")][c-1]+'"></div>');
+          $('#carousel-inner-helpinfo').append('<div class="item active"><img src="'+helpImg[helpUsername[$(this).attr("count")]+helpTitle[$(this).attr("count")]][c-1]+'"></div>');
         }
         else{
           var temp = c-1;
           $('#carousel-indicators-helpinfo').append('<li data-target="#carousel-example-generic" data-slide-to="'+temp+'" class=""></li>');
-          $('#carousel-inner-helpinfo').append('<div class="item"><img src="'+helpImg[$(this).attr("name")+$(this).attr("title")][temp]+'"></div>');
+          $('#carousel-inner-helpinfo').append('<div class="item"><img src="'+helpImg[helpUsername[$(this).attr("count")]+helpTitle[$(this).attr("count")]][temp]+'"></div>');
         }
       }
       else{break;}
     }
-    //$('#modal-footer-helpinfo').append('<div class="modal-footer-text"><div>'+help_text[$(this).attr("title")]+'</div></div>');     
+    $('#modal-footer-helpinfo').append('<div class="article-content-container"><div class="left-container"><div class="fa fa-tag"><h1>'+helpTitle[$(this).attr("count")]+'</h1></div><div class="fa fa-clock-o"><h1>'+helpTime[$(this).attr("count")]+'</h1></div><div class="fa fa-umbrella"><h1><i class="fa fa-smile-o article-mood" value="smile"></i><i class="fa fa-meh-o article-mood" value="soso"></i><i class="fa fa-frown-o article-mood" value="down"></i></h1></div><div class="fa fa-location-arrow"><h1>'+helpPosition[$(this).attr("count")]+'</h1></div><div class="article-date">'+helpDate[$(this).attr("count")]+'</div></div><div class="right-container"><span class="fa fa-pencil">記事</span><div class="article-text">'+helpText[$(this).attr("count")]+'</div></div></div>');     
+    $("#modal-footer-helpinfo").find('.article-mood[value='+helpMood[$(this).attr("count")]+']').css('display','block');
+    $(".article-text").mCustomScrollbar({
+      theme:"rounded-dark",
+      scrollButtons:{
+        enable:true
+      }
+    });
   });
 
   $(".travelmode i").on('click',function(event){
